@@ -1,0 +1,1 @@
+function exweapons:core/trigger/attack/tick

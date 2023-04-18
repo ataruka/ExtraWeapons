@@ -1,0 +1,27 @@
+{
+    "values": [
+        "#arrows",
+        "#impact_projectiles",
+        "area_effect_cloud",
+        "armor_stand",
+        "chest_minecart",
+        "command_block_minecart",
+        "end_crystal",
+        "evoker_fangs",
+        "fishing_bobber",
+        "firework_rocket",
+        "item",
+        "tnt",
+        "tnt_minecart",
+        "furnace_minecart",
+        "minecart",
+        "hopper_minecart",
+        "experience_orb",
+        "eye_of_ender",
+        "spawner_minecart",
+        "item_frame",
+        "item_display",
+        "text_display",
+        "block_display"
+    ]
+}

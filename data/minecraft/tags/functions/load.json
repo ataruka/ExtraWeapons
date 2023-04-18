@@ -1,5 +1,5 @@
 {
   "values": [
-    "exweapons:start"
+    "exweapons:start","better_collision:core/load","mt:load"
   ]
 }

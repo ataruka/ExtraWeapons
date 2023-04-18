@@ -1,0 +1,32 @@
+{
+  "parent": "item/handheld_rod",
+  "textures": {
+    "layer0": "item/carrot_on_a_stick"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 10001
+      },
+      "model": "item/weapon/gunblade_blademode"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10002
+      },
+      "model": "item/weapon/gunblade_gunmode"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10003
+      },
+      "model": "item/weapon/gunblade_snipermode"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10004
+      },
+      "model": "item/weapon/katana"
+    }
+  ]
+}

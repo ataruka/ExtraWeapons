@@ -1,0 +1,6 @@
+
+BetterCollision: Ron茶様
+https://github.com/Ron-Tya-MC/BetterCollision
+
+MT19937-for-mcfunction: Suyarumi様
+https://github.com/Suyarumi/MT19937-for-mcfunction
