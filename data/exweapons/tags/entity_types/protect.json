@@ -1,0 +1,23 @@
+{
+    "values": [
+        "villager",
+        "wandering_trader",
+        "cat",
+        "wolf",
+        "cow",
+        "sheep",
+        "pig",
+        "zombie_horse",
+        "skeleton_horse",
+        "horse",
+        "rabbit",
+        "mule",
+        "donkey",
+        "frog",
+        "bee",
+        "boat",
+        "chicken",
+        "dolphin",
+        "fox"
+    ]
+}

@@ -9,3 +9,7 @@
  execute as @e[limit=1,sort=nearest,tag=exweapons.armor_set,type=armor_stand] at @s run function exweapons:core/weapons/katana/zangeki/2.damage
  execute as @e[limit=1,sort=nearest,tag=exweapons.armor_set,type=armor_stand] at @s run function exweapons:core/weapons/katana/zangeki/3.tp
  tag @e[limit=1,sort=nearest,tag=exweapons.armor_set,type=armor_stand] remove exweapons.armor_set
+playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 1 2 0
+playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 1 2 0
+playsound minecraft:item.bucket.empty master @a ~ ~ ~ 1 1 0
+playsound minecraft:item.bucket.empty master @a ~ ~ ~ 1 2 0

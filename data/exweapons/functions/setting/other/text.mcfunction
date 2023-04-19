@@ -1,3 +1,10 @@
+execute if entity @s[tag=!ExWeapons.TextSetting_Failure] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1 1
+execute if entity @s[tag=ExWeapons.TextSetting_Failure] run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1 1
+execute if entity @s[tag=ExWeapons.TextSetting_Failure] run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1 1
+execute if entity @s[tag=ExWeapons.TextSetting_Failure] run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1 1
+execute if entity @s[tag=ExWeapons.TextSetting_Failure] run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1 1
+execute if entity @s[tag=ExWeapons.TextSetting_Failure] run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1 1
+tag @s remove ExWeapons.TextSetting_Failure 
 tellraw @s {"text": "---------------------------------","color": "yellow"}
 tellraw @s [{"text": "              "},{"text": "☆その他の設定☆","hoverEvent": {"action": "show_text","value": {"text": "その他の設定です。\n色々な設定を行えます"}}}]
 tellraw @s {"text": " "}
