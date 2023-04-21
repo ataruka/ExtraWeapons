@@ -10,6 +10,8 @@ tellraw @s [{"text": "              "},{"text": "☆その他の設定☆","hove
 tellraw @s {"text": " "}
 execute if score $FriendlyFire ExWeapons.setting matches 0 run tellraw @s [{"text": "FriendlyFire","color": "gray","hoverEvent": {"action": "show_text","value": {"text": "FriendlyFire。\noffにするとプレイヤー同士武器の特殊攻撃が当たらなくなります\n現在offです"}},"clickEvent": {"action": "run_command","value": "/function exweapons:setting/other/friendlyfire/on"}}]
 execute if score $FriendlyFire ExWeapons.setting matches 1 run tellraw @s [{"text": "FriendlyFire","color": "green","hoverEvent": {"action": "show_text","value": {"text": "FriendlyFire。\noffにするとプレイヤー同士武器の特殊攻撃が当たらなくなります\n現在onです"}},"clickEvent": {"action": "run_command","value": "/function exweapons:setting/other/friendlyfire/off"}}]
+execute if score $Ability ExWeapons.setting matches 0 run tellraw @s [{"text": "Ability","color": "gray","hoverEvent": {"action": "show_text","value": {"text": "Ability。\noffにするとプレイヤーのAbility機能が使えなくなります\n現在offです"}},"clickEvent": {"action": "run_command","value": "/function exweapons:setting/other/ability/on"}}]
+execute if score $Ability ExWeapons.setting matches 1 run tellraw @s [{"text": "Ability","color": "green","hoverEvent": {"action": "show_text","value": {"text": "Ability。\noffにするとプレイヤーのAbility機能が使えなくなります\n現在onです"}},"clickEvent": {"action": "run_command","value": "/function exweapons:setting/other/ability/off"}}]
 tellraw @s {"text": " "}
 tellraw @s {"text": "[←]","color": "gold","clickEvent": {"action": "run_command","value": "/function exweapons:setting/text"}}
 tellraw @s {"text": "---------------------------------","color": "yellow"}

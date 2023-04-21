@@ -11,6 +11,5 @@
  execute if score $FriendlyFire ExWeapons.setting matches 0 positioned ~ ~-1 ~ run tag @e[distance=..1.5,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner,type=!player] add tmp.target
  execute if score $FriendlyFire ExWeapons.setting matches 1 positioned ~ ~-1 ~ run tag @e[distance=..1.5,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner] add tmp.target
  execute as @e[tag=tmp.target] at @s run function exweapons:core/damage/run
- scoreboard players reset $Tmp ExWeapons.rng
  tag @e remove tmp.target
  tag @e remove tmp.owner
