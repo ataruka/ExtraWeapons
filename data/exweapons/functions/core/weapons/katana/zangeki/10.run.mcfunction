@@ -1,0 +1,10 @@
+execute if entity @s[predicate=exweapons:is_sneaking,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Charged:1}}}}},type=player] run function exweapons:core/weapons/katana/zangeki/1-5.zangeki
+execute if entity @s[predicate=!exweapons:is_sneaking,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Attack:0}}}}},tag=!tmp.check,type=player] run function exweapons:core/weapons/katana/zangeki/1.zangeki
+execute if entity @s[predicate=!exweapons:is_sneaking,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Attack:1}}}}},tag=!tmp.check,type=player] run function exweapons:core/weapons/katana/zangeki/1-2.zangeki
+execute if entity @s[predicate=!exweapons:is_sneaking,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Attack:2}}}}},tag=!tmp.check,type=player] run function exweapons:core/weapons/katana/zangeki/1-3.zangeki
+execute if entity @s[predicate=!exweapons:is_sneaking,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Attack:3}}}}},tag=!tmp.check,type=player] run function exweapons:core/weapons/katana/zangeki/1-4.zangeki
+execute if entity @s[nbt={HandItems:[{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Attack:0}}}}]},tag=!tmp.check,type=!player] run function exweapons:core/weapons/katana/zangeki/1.zangeki
+execute if entity @s[nbt={HandItems:[{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Attack:1}}}}]},tag=!tmp.check,type=!player] run function exweapons:core/weapons/katana/zangeki/1-2.zangeki
+execute if entity @s[nbt={HandItems:[{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Attack:2}}}}]},tag=!tmp.check,type=!player] run function exweapons:core/weapons/katana/zangeki/1-3.zangeki
+execute if entity @s[nbt={HandItems:[{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Attack:3}}}}]},tag=!tmp.check,type=!player] run function exweapons:core/weapons/katana/zangeki/1-4.zangeki
+tag @s remove tmp.check

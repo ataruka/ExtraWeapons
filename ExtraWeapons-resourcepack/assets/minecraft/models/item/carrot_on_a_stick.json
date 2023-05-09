@@ -6,27 +6,39 @@
   "overrides": [
     {
       "predicate": {
-        "custom_model_data": 10001
+        "custom_model_data": 100010
       },
       "model": "item/weapon/gunblade_blademode"
     },
     {
       "predicate": {
-        "custom_model_data": 10002
+        "custom_model_data": 100020
       },
       "model": "item/weapon/gunblade_gunmode"
     },
     {
       "predicate": {
-        "custom_model_data": 10003
+        "custom_model_data": 100030
       },
       "model": "item/weapon/gunblade_snipermode"
     },
     {
       "predicate": {
-        "custom_model_data": 10004
+        "custom_model_data": 100040
       },
       "model": "item/weapon/katana"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 100041
+      },
+      "model": "item/weapon/katana_charged"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 100050
+      },
+      "model": "item/weapon/sensu"
     }
   ]
 }

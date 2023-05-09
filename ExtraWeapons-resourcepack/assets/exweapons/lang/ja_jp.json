@@ -1,0 +1,16 @@
+{
+    "item.exweapons.grass_aspect_sword": "草付与の剣",
+    "item.exweapons.katana": "八〇式刀剣",
+    "item.exweapons.kuzyakusen": "孔雀扇",
+
+
+    "itemlore.exweapons.grass_aspect_sword": "通常攻撃で草状態を付与する",
+    "itemlore.exweapons.katana": "通常攻撃で斬撃を飛ばす",
+    "itemlore.exweapons.kuzyakusen": "通常攻撃でのKnockbackが高い",
+
+    "itemlore.exweapons.main_handin": "利き手に持ったとき:",
+    "itemlore.exweapons.attackdamage": "攻撃力",
+    "itemlore.exweapons.attackspeed": "攻撃速度",
+
+    "chatlog.exweapons.cp_is_insufficient": "CPが不足しています。"
+}
