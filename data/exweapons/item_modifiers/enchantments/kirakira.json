@@ -1,8 +1,6 @@
 [
   {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "exweapons:kirakira": 1
-    }
+    "function": "minecraft:set_nbt",
+    "tag": "{Enchantments:[{id:\"exweapons:kirakira\",lvl:1s}]}"
   }
 ]

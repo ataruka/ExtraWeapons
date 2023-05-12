@@ -3,6 +3,7 @@ scoreboard objectives add ExWeapons.attack minecraft.custom:damage_dealt
 scoreboard objectives add ExWeapons.use.carrot_on_a_stick minecraft.used:carrot_on_a_stick
 
 scoreboard objectives add ExWeapons.setting dummy
+scoreboard objectives add ExWeapons.damagerng dummy
 scoreboard objectives add ExWeapons.rng dummy
 scoreboard objectives add ExWeapons.rnd dummy
 
@@ -52,11 +53,12 @@ scoreboard objectives add ExWeapons.DetailAbility.KnockbackResistance dummy
 scoreboard objectives add ExWeapons.DetailAbility.Armor dummy
 scoreboard objectives add ExWeapons.DetailAbility.ArmorToughness dummy
 scoreboard objectives add ExWeapons.DetailAbility.Luck dummy
-### 倍率(1+値%x100)
+### 倍率(1+値%x100) 
 scoreboard objectives add ExWeapons.DetailAbility.HealthMul dummy
 scoreboard objectives add ExWeapons.DetailAbility.MovementSpeed dummy
 scoreboard objectives add ExWeapons.DetailAbility.AttackSpeed dummy
 scoreboard objectives add ExWeapons.DetailAbility.ExAttackDamageMul dummy
+scoreboard objectives add ExWeapons.DetailAbility.ExAttackDurationMul dummy
 ### ※ScoreToDamageモードでのみ稼働
 scoreboard objectives add ExWeapons.DetailAbility.ExAttackProtectionMul dummy
 ## 属性Ability(1+値%x100)
@@ -125,7 +127,7 @@ execute unless score $kuzyakusen_SenpuDamage ExWeapons.setting matches -21474836
 execute unless score $FriendlyFire ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $FriendlyFire ExWeapons.setting 1
 ## Ability(1 true|0 false)
 execute unless score $Ability ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $Ability ExWeapons.setting 1
-## ScoreToDamageMode(1 true|0 false)
+## ScoreToDamageMode(1 true|0 false)※実験機能
 execute unless score $ScoreToDamageMode ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $ScoreToDamageMode ExWeapons.setting 1
 
 # 初期起動メッセージ

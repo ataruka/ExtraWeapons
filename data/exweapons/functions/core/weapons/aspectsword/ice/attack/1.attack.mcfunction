@@ -19,8 +19,8 @@
 ### 特殊
  execute positioned ^ ^ ^4 as @e[distance=..9,nbt={HurtTime:10s}] at @s on attacker if entity @s[tag=tmp.owner] run tag @e[sort=nearest,limit=1] add tmp.target
 ### Run
- execute as @e[tag=tmp.target] run scoreboard players set @s ExWeapons.Abnormal.grassTick 160
- execute as @e[tag=tmp.target] run tag @s add ExWeapons.Abnormal.grassLv1
+ execute as @e[tag=tmp.target] run scoreboard players set @s ExWeapons.Abnormal.iceTick 100
+ execute as @e[tag=tmp.target] run tag @s add ExWeapons.Abnormal.iceLv1
  
 # リセット
  tag @e remove tmp.target

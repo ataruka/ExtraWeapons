@@ -7,8 +7,8 @@
  scoreboard players operation $Tmp ExWeapons.rng += @e[tag=tmp.owner,limit=1] ExWeapons.DetailAbility.ExAttackDamage
 
  scoreboard players operation $Tmp ExWeapons.rng *= $katana_ZangekiMultiplier3 ExWeapons.setting
- scoreboard players operation $Tmp ExWeapons.rng *= @s ExWeapons.DetailAbility.ExAttackDamageMul
- scoreboard players operation $Tmp ExWeapons.rng *= @s ExWeapons.AttributeAbility.WaterDamage
+ scoreboard players operation $Tmp ExWeapons.rng *= @e[tag=tmp.owner,limit=1] ExWeapons.DetailAbility.ExAttackDamageMul
+ scoreboard players operation $Tmp ExWeapons.rng *= @e[tag=tmp.owner,limit=1] ExWeapons.AttributeAbility.WaterDamage
  scoreboard players operation $Tmp ExWeapons.rng /= #100 ExWeapons.rng
  scoreboard players operation $Tmp ExWeapons.rng /= #100 ExWeapons.rng
  scoreboard players operation $Tmp ExWeapons.rng /= #100 ExWeapons.rng

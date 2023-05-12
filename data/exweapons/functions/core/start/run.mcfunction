@@ -23,15 +23,15 @@
  execute as @e unless score @s ExWeapons.AttributeAbility.WaterDamage matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.WaterDamage 100
  execute as @e unless score @s ExWeapons.AttributeAbility.WindDamage matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.WindDamage 100
 ## ScoreToDamageモードでのみ稼働
- execute as @e unless score @s ExWeapons.DetailAbility.ExDamageProtectionMul matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.DetailAbility.ExDamageProtectionMul 100
- execute as @e unless score @s ExWeapons.AttributeAbility.FireProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.FireProtection 100
- execute as @e unless score @s ExWeapons.AttributeAbility.FrostProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.FrostProtection 100
- execute as @e unless score @s ExWeapons.AttributeAbility.GrassProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.GrassProtection 100
- execute as @e unless score @s ExWeapons.AttributeAbility.MuProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.MuProtection 100
- execute as @e unless score @s ExWeapons.AttributeAbility.ThunderProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.ThunderProtection 100
- execute as @e unless score @s ExWeapons.AttributeAbility.VoidProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.VoidProtection 100
- execute as @e unless score @s ExWeapons.AttributeAbility.WaterProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.WaterProtection 100
- execute as @e unless score @s ExWeapons.AttributeAbility.WindProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.WindProtection 100
+ execute as @e unless score @s ExWeapons.DetailAbility.ExDamageProtectionMul matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.DetailAbility.ExDamageProtectionMul 0
+ execute as @e unless score @s ExWeapons.AttributeAbility.FireProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.FireProtection 0
+ execute as @e unless score @s ExWeapons.AttributeAbility.FrostProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.FrostProtection 0
+ execute as @e unless score @s ExWeapons.AttributeAbility.GrassProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.GrassProtection 0
+ execute as @e unless score @s ExWeapons.AttributeAbility.MuProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.MuProtection 0
+ execute as @e unless score @s ExWeapons.AttributeAbility.ThunderProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.ThunderProtection 0
+ execute as @e unless score @s ExWeapons.AttributeAbility.VoidProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.VoidProtection 0
+ execute as @e unless score @s ExWeapons.AttributeAbility.WaterProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.WaterProtection 0
+ execute as @e unless score @s ExWeapons.AttributeAbility.WindProtection matches -2147483648..2147483647 run scoreboard players set @s ExWeapons.AttributeAbility.WindProtection 0
  execute as @a store result score @s ExWeapons.PlayerUUID0 run data get entity @s UUID[0]
  execute as @a store result score @s ExWeapons.PlayerUUID1 run data get entity @s UUID[1]
  execute as @a store result score @s ExWeapons.PlayerUUID2 run data get entity @s UUID[2]

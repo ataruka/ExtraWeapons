@@ -7,8 +7,8 @@
  execute store result score $Tmp ExWeapons.rng run scoreboard players get $kuzyakusen_SenpuDamage ExWeapons.setting
  scoreboard players operation $Tmp ExWeapons.rng += @e[tag=tmp.owner,limit=1] ExWeapons.DetailAbility.ExAttackDamage
 
- scoreboard players operation $Tmp ExWeapons.rng *= @s ExWeapons.DetailAbility.ExAttackDamageMul
- scoreboard players operation $Tmp ExWeapons.rng *= @s ExWeapons.AttributeAbility.WindDamage
+ scoreboard players operation $Tmp ExWeapons.rng *= @e[tag=tmp.owner,limit=1] ExWeapons.DetailAbility.ExAttackDamageMul
+ scoreboard players operation $Tmp ExWeapons.rng *= @e[tag=tmp.owner,limit=1] ExWeapons.AttributeAbility.WindDamage
  scoreboard players operation $Tmp ExWeapons.rng /= #100 ExWeapons.rng
  scoreboard players operation $Tmp ExWeapons.rng /= #100 ExWeapons.rng
  scoreboard players operation $Tmp ExWeapons.rng /= #100 ExWeapons.rng
@@ -19,6 +19,8 @@
 
  execute as @e[distance=..4,type=#arrows] run data merge entity @s {Motion:[0.0,0.0,0.0]}
  execute as @s at @s run tp @e[type=item,distance=..4] ~ ~ ~
+ execute as @s at @s run tp @e[type=!#exweapons:non_living,tag=!tmp.owner,distance=..4] ~ ~ ~
+
  execute as @e[tag=tmp.target] at @s run function exweapons:core/damage/run
 
  execute if entity @e[tag=tmp.owner,type=player] if score $FriendlyFire ExWeapons.setting matches 0 run tag @e[distance=..5,type=!#exweapons:non_living,tag=!tmp.owner,type=!player] add tmp.target

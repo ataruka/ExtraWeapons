@@ -6,5 +6,3 @@
  playsound minecraft:entity.player.attack.weak master @a ~ ~ ~ 2 2
  playsound minecraft:entity.player.attack.weak master @a ~ ~ ~ 2 2
  playsound minecraft:entity.player.attack.weak master @a ~ ~ ~ 2 2
- playsound minecraft:entity.player.attack.weak master @a ~ ~ ~ 2 2
- playsound minecraft:entity.player.attack.weak master @a ~ ~ ~ 2 2

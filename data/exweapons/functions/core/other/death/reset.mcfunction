@@ -52,5 +52,6 @@ tag @s remove exweapons.katana.zangeki5
 tag @s remove exweapons.kuzyakusen.senpuCT
 ## other
 tag @s remove tmp.check
+tag @s remove tmp.noattack
 tag @s remove tmp.damage
 tag @s remove tmp.target

@@ -1,10 +1,12 @@
 {
     "item.exweapons.grass_aspect_sword": "Grass Aspect Sword",
+    "item.exweapons.fire_aspect_sword": "Fire Aspect Sword",
     "item.exweapons.katana": "Type 80 Katana",
     "item.exweapons.kuzyakusen": "Peacock Folding Fan",
 
 
     "itemlore.exweapons.grass_aspect_sword": "Give grass status with normal attack",
+    "itemlore.exweapons.fire_aspect_sword": "Give fire status with normal attack",
     "itemlore.exweapons.katana": "Throw a slash with a normal attack",
     "itemlore.exweapons.kuzyakusen": "High knockback with normal attacks",
 

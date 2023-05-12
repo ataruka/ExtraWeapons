@@ -1,0 +1,1 @@
+give @p stone_sword{display:{Name:'{"translate":"item.exweapons.ice_aspect_sword","color":"aqua","italic":false}',Lore:['{"translate":"itemlore.exweapons.ice_aspect_sword","color":"gold","italic":false}']},RepairCost:12000000,CustomModelData:100040,exweapons:{id:006d,weapon:{}}} 1

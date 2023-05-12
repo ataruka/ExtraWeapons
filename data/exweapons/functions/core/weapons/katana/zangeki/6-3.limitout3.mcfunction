@@ -18,9 +18,12 @@
  scoreboard players operation $Tmp ExWeapons.rng /= #100 ExWeapons.rng
  scoreboard players operation $Tmp ExWeapons.rng /= #100 ExWeapons.rng
 
- execute if entity @e[tag=tmp.owner,type=player] if score $FriendlyFire ExWeapons.setting matches 0 anchored eyes rotated ~-135 0 positioned ^ ^ ^6 run tag @e[distance=..5,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner,type=!player] add tmp.target
- execute if entity @e[tag=tmp.owner,type=player] if score $FriendlyFire ExWeapons.setting matches 1 anchored eyes rotated ~-135 0 positioned ^ ^ ^6 run tag @e[distance=..5,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner] add tmp.target
- execute if entity @e[tag=tmp.owner,type=!player] anchored eyes rotated ~-135 0 positioned ^ ^ ^6 run tag @e[distance=..5,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner] add tmp.target
+ execute if entity @e[tag=tmp.owner,type=player] if score $FriendlyFire ExWeapons.setting matches 0 rotated ~-135 0 positioned ^ ^ ^6 run tag @e[distance=..5,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner,type=!player] add tmp.target
+ execute if entity @e[tag=tmp.owner,type=player] if score $FriendlyFire ExWeapons.setting matches 1 rotated ~-135 0 positioned ^ ^ ^6 run tag @e[distance=..5,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner] add tmp.target
+ execute if entity @e[tag=tmp.owner,type=!player] rotated ~-135 0 positioned ^ ^ ^6 run tag @e[distance=..5,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner] add tmp.target
+ execute if entity @e[tag=tmp.owner,type=player] if score $FriendlyFire ExWeapons.setting matches 0 run tag @e[distance=..4,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner,type=!player] add tmp.target
+ execute if entity @e[tag=tmp.owner,type=player] if score $FriendlyFire ExWeapons.setting matches 1 run tag @e[distance=..4,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner] add tmp.target
+ execute if entity @e[tag=tmp.owner,type=!player] run tag @e[distance=..4,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner] add tmp.target
 
  execute as @e[tag=tmp.target] at @s run function exweapons:core/damage/run
  tag @e remove tmp.target

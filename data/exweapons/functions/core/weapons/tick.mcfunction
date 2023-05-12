@@ -43,3 +43,4 @@ execute as @e[tag=exweapons.kuzyakusen.senpu] at @s run function exweapons:core/
 execute as @e[scores={ExWeapons.kuzyakusen.SenpuTick=..0}] at @s run kill @s
 tag @e[scores={ExWeapons.kuzyakusen.SenpuCT=..0}] remove exweapons.kuzyakusen.senpuCT
 scoreboard players reset @e[scores={ExWeapons.kuzyakusen.SenpuCT=..0}] ExWeapons.kuzyakusen.SenpuCT
+# 草付与の剣-grass_aspect_sword
