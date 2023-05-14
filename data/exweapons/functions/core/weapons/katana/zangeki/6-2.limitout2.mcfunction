@@ -24,6 +24,6 @@
  execute if entity @e[tag=tmp.owner,type=player] if score $FriendlyFire ExWeapons.setting matches 0 run tag @e[distance=..4,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner,type=!player] add tmp.target
  execute if entity @e[tag=tmp.owner,type=player] if score $FriendlyFire ExWeapons.setting matches 1 run tag @e[distance=..4,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner] add tmp.target
  execute if entity @e[tag=tmp.owner,type=!player] run tag @e[distance=..4,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner] add tmp.target
- execute as @e[tag=tmp.target] at @s run function exweapons:core/damage/run
+ execute as @e[tag=tmp.target] at @s run function exweapons:core/damage/
  tag @e remove tmp.target
  tag @s remove tmp.owner

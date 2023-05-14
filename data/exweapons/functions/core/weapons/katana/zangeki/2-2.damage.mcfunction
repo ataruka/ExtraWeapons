@@ -27,7 +27,7 @@
  execute if entity @e[tag=tmp.owner,type=!player] positioned ^1.5 ^ ^ run tag @e[distance=..2.5,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner] add tmp.target
  execute if entity @e[tag=tmp.owner,type=!player] positioned ^-1.5 ^ ^ run tag @e[distance=..2.5,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner] add tmp.target
 ### Run
- execute as @e[tag=tmp.target] at @s run function exweapons:core/damage/run
+ execute as @e[tag=tmp.target] at @s run function exweapons:core/damage/
 
 ## 状態異常
 ### Player
