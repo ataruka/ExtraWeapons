@@ -1,18 +1,25 @@
 # リセット(スコア)
 ## 状態異常-Abnormal(Status)
 ### 継続時間
-scoreboard players reset @s ExWeapons.Abnormal.fireTick
-scoreboard players reset @s ExWeapons.Abnormal.waterTick
-scoreboard players reset @s ExWeapons.Abnormal.thunderTick
-scoreboard players reset @s ExWeapons.Abnormal.grassTick
-scoreboard players reset @s ExWeapons.Abnormal.iceTick
-scoreboard players reset @s ExWeapons.Abnormal.grassThunderTick
+scoreboard players set @s ExWeapons.Abnormal.fireTick 0
+scoreboard players set @s ExWeapons.Abnormal.waterTick 0
+scoreboard players set @s ExWeapons.Abnormal.thunderTick 0
+scoreboard players set @s ExWeapons.Abnormal.grassTick 0
+scoreboard players set @s ExWeapons.Abnormal.iceTick 0
+scoreboard players set @s ExWeapons.Abnormal.grassThunderTick 0
+scoreboard players set @s ExWeapons.Abnormal.voidTick 0
 
-scoreboard players reset @s ExWeapons.Abnormal.ice.frozenTick
+scoreboard players set @s ExWeapons.Abnormal.ice.frozenTick 0
 ### 効果発動待機時間
 scoreboard players reset @s ExWeapons.Abnormal.fireDamageTick
 scoreboard players reset @s ExWeapons.Abnormal.waterDamageTick
 scoreboard players reset @s ExWeapons.Abnormal.thunderDamageTick
+scoreboard players reset @s ExWeapons.Abnormal.voidArmorTick
+scoreboard players reset @s ExWeapons.Abnormal.voidAttackTick
+scoreboard players reset @s ExWeapons.Abnormal.voidMoveTick
+scoreboard players reset @s ExWeapons.Abnormal.voidAttackSpeedTick
+scoreboard players reset @s ExWeapons.Abnormal.voidMaxHealthTick
+scoreboard players reset @s ExWeapons.Abnormal.voidKBResistTick
 ## 刀-katana
 ### 斬撃-zangeki
 scoreboard players reset @s ExWeapons.katana.ZangekiTick
@@ -46,6 +53,41 @@ tag @s remove ExWeapons.Abnormal.waterLv3
 tag @s remove ExWeapons.Abnormal.windLv1
 tag @s remove ExWeapons.Abnormal.windLv2
 tag @s remove ExWeapons.Abnormal.windLv3
+
+tag @s remove ExWeapons.Abnormal.voidLv1
+tag @s remove ExWeapons.Abnormal.voidLv2
+tag @s remove ExWeapons.Abnormal.voidLv3
+
+tag @s remove ExWeapons.Abnormal.voidArmorLv1
+tag @s remove ExWeapons.Abnormal.voidArmorLv2
+tag @s remove ExWeapons.Abnormal.voidArmorLv3
+tag @s remove ExWeapons.Abnormal.voidArmorLv4
+tag @s remove ExWeapons.Abnormal.voidArmorLv5
+tag @s remove ExWeapons.Abnormal.voidAttackSpeedLv1
+tag @s remove ExWeapons.Abnormal.voidAttackSpeedLv2
+tag @s remove ExWeapons.Abnormal.voidAttackSpeedLv3
+tag @s remove ExWeapons.Abnormal.voidAttackSpeedLv4
+tag @s remove ExWeapons.Abnormal.voidAttackSpeedLv5
+tag @s remove ExWeapons.Abnormal.voidAttackLv1
+tag @s remove ExWeapons.Abnormal.voidAttackLv2
+tag @s remove ExWeapons.Abnormal.voidAttackLv3
+tag @s remove ExWeapons.Abnormal.voidAttackLv4
+tag @s remove ExWeapons.Abnormal.voidAttackLv5
+tag @s remove ExWeapons.Abnormal.voidKBResistanceLv1
+tag @s remove ExWeapons.Abnormal.voidKBResistanceLv2
+tag @s remove ExWeapons.Abnormal.voidKBResistanceLv3
+tag @s remove ExWeapons.Abnormal.voidKBResistanceLv4
+tag @s remove ExWeapons.Abnormal.voidKBResistanceLv5
+tag @s remove ExWeapons.Abnormal.voidMovementLv1
+tag @s remove ExWeapons.Abnormal.voidMovementLv2
+tag @s remove ExWeapons.Abnormal.voidMovementLv3
+tag @s remove ExWeapons.Abnormal.voidMovementLv4
+tag @s remove ExWeapons.Abnormal.voidMovementLv5
+tag @s remove ExWeapons.Abnormal.voidMaxHealthLv1
+tag @s remove ExWeapons.Abnormal.voidMaxHealthLv2
+tag @s remove ExWeapons.Abnormal.voidMaxHealthLv3
+tag @s remove ExWeapons.Abnormal.voidMaxHealthLv4
+tag @s remove ExWeapons.Abnormal.voidMaxHealthLv5
 ## katana
 tag @s remove exweapons.katana.zangeki5
 ## kuzyakusen

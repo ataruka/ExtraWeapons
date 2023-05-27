@@ -4,4 +4,4 @@ function exweapons:core/abnormal/tick
 function exweapons:core/trigger/tick
 function exweapons:core/weapons/tick
 
-function exweapons:core/end/run
+#function exweapons:core/end/run

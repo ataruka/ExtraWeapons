@@ -5,9 +5,12 @@
  execute store result score $Tmp ExWeapons.rng run data get storage exweapons: item.weapon.nbt.ChargePoint
  execute if entity @s[type=player] unless score $Tmp ExWeapons.rng matches 20.. run tellraw @s [{"text": "[ExWeapons]ERROR>> ","color": "red"},{"translate":"chatlog.exweapons.cp_is_insufficient","color": "red"},{"text": "(20/","color": "red"},{"score":{"name":"$Tmp","objective":"ExWeapons.rng"},"color": "red"},{"text": ")","color": "red"}]
  execute if entity @s[type=player] unless score $Tmp ExWeapons.rng matches 20.. run tag @s add tmp.noattack
- execute if score $Tmp ExWeapons.rng matches 20.. run scoreboard players remove $Tmp ExWeapons.rng 20
  execute if score $Tmp ExWeapons.rng matches 200.. run scoreboard players set $Tmp ExWeapons.rng 200
+ execute if score $Tmp ExWeapons.rng matches 20.. run scoreboard players remove $Tmp ExWeapons.rng 20
+ execute store result storage exweapons: item.weapon.nbt.ChargePoint int 1 run scoreboard players get $Tmp ExWeapons.rng
 
+ execute if entity @s[tag=tmp.noattack] run item modify entity @s weapon.mainhand exweapons:nbtcopy_weapon
+ execute if entity @s[tag=tmp.noattack] run data remove storage exweapons: item.weapon.nbt
  execute if entity @s[tag=!tmp.noattack] run data merge storage exweapons: {item:{weapon:{nbt:{Charged:0}}}}
  execute if entity @s[tag=!tmp.noattack] run item modify entity @s weapon.mainhand exweapons:nbtcopy_weapon
  execute if entity @s[tag=!tmp.noattack] run data remove storage exweapons: item.weapon.nbt
@@ -30,7 +33,7 @@
  execute if entity @s[tag=!tmp.noattack] run item modify entity @s weapon.mainhand exweapons:enchantments/kirakira_delete
 
  execute if entity @s[tag=!tmp.noattack] run tag @s add exweapons.katana.zangeki5
- execute if entity @s[tag=!tmp.noattack] run scoreboard players operation @s ExWeapons.katana.ZangekiTick = $katana_Zangeki_LimitOutDistance ExWeapons.setting
+ execute if entity @s[tag=!tmp.noattack] run scoreboard players operation @s ExWeapons.katana.ZangekiTick = $katana_Zangeki_LimitOutDuration ExWeapons.setting
  
  execute if entity @s[tag=!tmp.noattack] run playsound minecraft:entity.lightning_bolt.thunder master @a ~ ~ ~ 1 1
  execute if entity @s[tag=!tmp.noattack] run playsound minecraft:entity.lightning_bolt.thunder master @a ~ ~ ~ 1 1

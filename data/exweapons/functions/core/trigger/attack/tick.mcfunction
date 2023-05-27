@@ -17,6 +17,8 @@ execute as @a[scores={ExWeapons.attack=1..},nbt={SelectedItem:{id:"minecraft:sto
 execute as @a[scores={ExWeapons.attack=1..},nbt={SelectedItem:{id:"minecraft:stone_sword",tag:{exweapons:{id:007d}}}}] at @s run function exweapons:core/weapons/aspectsword/thunder/attack/1.attack
 ## 風付与の剣-WindAspect-Sword
 execute as @a[scores={ExWeapons.attack=1..},nbt={SelectedItem:{id:"minecraft:stone_sword",tag:{exweapons:{id:008d}}}}] at @s run function exweapons:core/weapons/aspectsword/wind/attack/1.attack
+## 虚付与の剣-VoidAspect-Sword
+execute as @a[scores={ExWeapons.attack=1..},nbt={SelectedItem:{id:"minecraft:stone_sword",tag:{exweapons:{id:009d}}}}] at @s run function exweapons:core/weapons/aspectsword/void/attack/1.attack
 
 # リセット
-scoreboard players reset * ExWeapons.attack
+scoreboard players reset @e[scores={ExWeapons.attack=-2147483648..2147483647}] ExWeapons.attack

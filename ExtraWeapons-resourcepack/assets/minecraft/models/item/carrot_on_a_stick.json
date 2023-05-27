@@ -39,6 +39,18 @@
         "custom_model_data": 100050
       },
       "model": "item/weapon/sensu"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 100060
+      },
+      "model": "item/item/everyday_giftbox"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 100070
+      },
+      "model": "item/item/instant_respawn_anchor"
     }
   ]
 }

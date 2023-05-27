@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "exweapons:item/instant_respawn_anchor"
+      }
+    }
+  },
+  "rewards": {
+    "function": "exweapons:core/craft/item/instant_respawn_anchor"
+  }
+}

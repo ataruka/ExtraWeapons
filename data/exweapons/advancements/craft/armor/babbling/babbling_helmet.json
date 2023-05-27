@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "exweapons:armor/babbling/babbling_helmet"
+      }
+    }
+  },
+  "rewards": {
+    "function": "exweapons:core/craft/armor/babbling/babbling_helmet"
+  }
+}

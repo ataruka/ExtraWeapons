@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "exweapons:item/self-harm_and_recover_potion"
+      }
+    }
+  },
+  "rewards": {
+    "function": "exweapons:core/craft/item/self-harm_and_recover_potion"
+  }
+}

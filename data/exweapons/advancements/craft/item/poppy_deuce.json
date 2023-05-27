@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "exweapons:item/poppy_deuce"
+      }
+    }
+  },
+  "rewards": {
+    "function": "exweapons:core/craft/item/poppy_deuce"
+  }
+}

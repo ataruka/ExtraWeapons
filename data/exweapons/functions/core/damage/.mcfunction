@@ -1,5 +1,8 @@
 # ダメージ計算
  scoreboard players operation @s ExWeapons.damagerng = $Damage ExWeapons.rng
+ execute if entity @s[tag=ExWeapons.Abnormal.grassThunderLv1] run function exweapons:core/damage/cal/abnormal/grassthunder1
+ execute if entity @s[tag=ExWeapons.Abnormal.grassThunderLv2] run function exweapons:core/damage/cal/abnormal/grassthunder2
+ execute if entity @s[tag=ExWeapons.Abnormal.grassThunderLv3] run function exweapons:core/damage/cal/abnormal/grassthunder3
  execute if score $DamageType ExWeapons.rng matches 1 run function exweapons:core/damage/cal/fire
  execute if score $DamageType ExWeapons.rng matches 2 run function exweapons:core/damage/cal/water
  execute if score $DamageType ExWeapons.rng matches 3 run function exweapons:core/damage/cal/thunder

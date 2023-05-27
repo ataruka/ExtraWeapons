@@ -1,19 +1,40 @@
 {
     "item.exweapons.grass_aspect_sword": "Grass Aspect Sword",
     "item.exweapons.fire_aspect_sword": "Fire Aspect Sword",
+    "item.exweapons.water_aspect_sword": "Water Aspect Sword",
+    "item.exweapons.ice_aspect_sword": "Ice Aspect Sword",
+    "item.exweapons.thunder_aspect_sword": "Thunder Aspect Sword",
+    "item.exweapons.wind_aspect_sword": "Wind Aspect Sword",
+    "item.exweapons.void_aspect_sword": "Void Aspect Sword",
+    "item.exweapons.poppy_deuce": "Poppy Deuce",
+    "item.exweapons.makeshift_potion": "Makeshift_Potion",
+    "item.exweapons.self-harm_and_recover_potion": "Self-harm and Recover Potion",
+    "item.exweapons.everyday_giftbox": "Everyday Giftbox",
+    "item.exweapons.instant_respawn_anchor": "Instant Respawn Anchor",
     "item.exweapons.katana": "Type 80 Katana",
     "item.exweapons.kuzyakusen": "Peacock Folding Fan",
 
 
     "itemlore.exweapons.grass_aspect_sword": "Give grass status with normal attack",
     "itemlore.exweapons.fire_aspect_sword": "Give fire status with normal attack",
+    "itemlore.exweapons.water_aspect_sword": "Give water status with normal attack",
+    "itemlore.exweapons.ice_aspect_sword": "Give ice status with normal attack",
+    "itemlore.exweapons.thunder_aspect_sword": "Give thunder status with normal attack",
+    "itemlore.exweapons.wind_aspect_sword": "Give wind status with normal attack",
+    "itemlore.exweapons.void_aspect_sword": "Give void status with normal attack",
+    "itemlore.exweapons.poppy_deuce": "Drinking it restores a little hunger and gives a little regeneration effect",
+    "itemlore.exweapons.makeshift_potion": "it's just a makeshift",
+    "itemlore.exweapons.self-harm_and_recover_potion": "Take damage and recover more!",
+    "itemlore.exweapons.everyday_giftbox": "I'm sure there's happiness in this",
+    "itemlore.exweapons.instant_respawn_anchor": "You can set respawn points instantly.",
     "itemlore.exweapons.katana": "Throw a slash with a normal attack",
     "itemlore.exweapons.kuzyakusen": "High knockback with normal attacks",
 
     "itemlore.exweapons.main_handin": "When in Main Hand:",
-    "itemlore.exweapons.attackdamage": "Attack Damage",
-    "itemlore.exweapons.attackspeed": "Attack Speed",
+    "itemlore.exweapons.attackdamage": " Attack Damage ",
+    "itemlore.exweapons.attackspeed": " Attack Speed ",
 
-    "chatlog.exweapons.cp_is_insufficient": "CP is insufficient."
+    "chatlog.exweapons.cp_is_insufficient": "CP is insufficient.",
+    "chatlog.exweapons.instant_respawn_anchor_failure": "\"InstantRespawnAnchor\" cannot be used because the player's HP or hunger is not above 20."
     
 }

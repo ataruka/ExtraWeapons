@@ -1,18 +1,39 @@
 {
     "item.exweapons.grass_aspect_sword": "草付与の剣",
     "item.exweapons.fire_aspect_sword": "火付与の剣",
+    "item.exweapons.water_aspect_sword": "水付与の剣",
+    "item.exweapons.ice_aspect_sword": "氷付与の剣",
+    "item.exweapons.thunder_aspect_sword": "雷付与の剣",
+    "item.exweapons.wind_aspect_sword": "風付与の剣",
+    "item.exweapons.void_aspect_sword": "虚付与の剣",
+    "item.exweapons.poppy_deuce": "ポピージュース",
+    "item.exweapons.makeshift_potion": "一時しのぎのポーション",
+    "item.exweapons.self-harm_and_recover_potion": "自傷回復のポーション",
+    "item.exweapons.everyday_giftbox": "毎日のプレゼントボックス",
+    "item.exweapons.instant_respawn_anchor": "インスタントリスポーンアンカー",
     "item.exweapons.katana": "八〇式刀剣",
     "item.exweapons.kuzyakusen": "孔雀扇",
 
 
     "itemlore.exweapons.grass_aspect_sword": "通常攻撃で草状態を付与する",
     "itemlore.exweapons.fire_aspect_sword": "通常攻撃で火状態を付与する",
+    "itemlore.exweapons.water_aspect_sword": "通常攻撃で水状態を付与する",
+    "itemlore.exweapons.ice_aspect_sword": "通常攻撃で氷状態を付与する",
+    "itemlore.exweapons.thunder_aspect_sword": "通常攻撃で雷状態を付与する",
+    "itemlore.exweapons.wind_aspect_sword": "通常攻撃で風状態を付与する",
+    "itemlore.exweapons.void_aspect_sword": "通常攻撃で虚状態を付与する",
+    "itemlore.exweapons.poppy_deuce": "飲むと満腹度が少し回復し、少しの再生能力が付きます",
+    "itemlore.exweapons.makeshift_potion": "これは単なる一時しのぎです",
+    "itemlore.exweapons.self-harm_and_recover_potion": "ダメージを受けて、それ以上に回復！",
+    "itemlore.exweapons.everyday_giftbox": "この箱に中にひと時の幸せ",
+    "itemlore.exweapons.instant_respawn_anchor": "即時にリスポーンポイントを設定できます。",
     "itemlore.exweapons.katana": "通常攻撃で斬撃を飛ばす",
     "itemlore.exweapons.kuzyakusen": "通常攻撃でのKnockbackが高い",
 
-    "itemlore.exweapons.main_handin": "利き手に持ったとき:",
-    "itemlore.exweapons.attackdamage": "攻撃力",
-    "itemlore.exweapons.attackspeed": "攻撃速度",
+    "itemlore.exweapons.main_handin": "利き手に持ったとき：",
+    "itemlore.exweapons.attackdamage": " 攻撃力 ",
+    "itemlore.exweapons.attackspeed": " 攻撃速度 ",
 
-    "chatlog.exweapons.cp_is_insufficient": "CPが不足しています。"
+    "chatlog.exweapons.cp_is_insufficient": "CPが不足しています。",
+    "chatlog.exweapons.instant_respawn_anchor_failure": "体力又は満腹度、あるいはその両方が20以上ではないため \"インスタントリスポーンアンカー\"を使用できません。"
 }

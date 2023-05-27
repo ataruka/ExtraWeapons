@@ -2,5 +2,8 @@
 BetterCollision: Ron茶様
 https://github.com/Ron-Tya-MC/BetterCollision
 
-AiMath: 赤石愛様
-https://github.com/Ai-Akaishi/AiMath
+AiUtil: 赤石愛様
+https://github.com/Ai-Akaishi/AiUtil
+
+AnywhereFunction: 赤石愛様
+https://github.com/Ai-Akaishi/AnywhereFunction

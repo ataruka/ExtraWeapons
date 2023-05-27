@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "nbt": "{exweapons:{id:011d,item:{power:0}}}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "exweapons:core/item/makeshift_potion/1.use"
+  }
+}

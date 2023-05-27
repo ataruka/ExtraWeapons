@@ -2,11 +2,10 @@
   "display": {
     "icon": {
       "item": "minecraft:carrot_on_a_stick",
-      "nbt": "{CustomModelData:10001}"
+      "nbt": "{CustomModelData:100040}"
     },
     "title": {
       "text": "Helloworld",
-      "color": "white",
       "bold": false,
       "italic": false,
       "underlined": false,

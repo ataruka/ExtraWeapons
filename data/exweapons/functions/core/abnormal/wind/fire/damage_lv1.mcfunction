@@ -2,5 +2,6 @@
  function exweapons:core/particle/abnormal/wind/spread1/spread_fire
  execute if score $FriendlyFire ExWeapons.setting matches 0 run tag @e[distance=..5,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner,type=!player] add tmp.targetn
  execute if score $FriendlyFire ExWeapons.setting matches 1 run tag @e[distance=..5,type=!#exweapons:non_living,type=!#exweapons:protect,tag=!tmp.owner] add tmp.target
- execute as @e[tag=tmp.target] at @s run damage @s 3 minecraft:on_fire
+ execute as @e[tag=tmp.target,type=player] at @s run damage @s 1 minecraft:on_fire
+ execute as @e[tag=tmp.target,type=!player] at @s run damage @s 3 minecraft:on_fire
  playsound minecraft:entity.player.hurt_on_fire master @a ~ ~ ~ 1 1

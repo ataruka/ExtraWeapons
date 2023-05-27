@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "RSR",
+        "RDR",
+        " R "
+    ],
+    "key": {
+      "R": {
+         "item": "minecraft:lapis_lazuli"
+      },
+      "S": {
+         "item": "minecraft:amethyst_shard"
+      },
+      "D": {
+          "item": "minecraft:diamond_chestplate"
+      }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}

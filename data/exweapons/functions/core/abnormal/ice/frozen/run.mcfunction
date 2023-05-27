@@ -4,7 +4,7 @@ scoreboard players reset @s ExWeapons.Abnormal.iceTick
 tag @s remove ExWeapons.Abnormal.iceLv1
 tag @s remove ExWeapons.Abnormal.iceLv2
 tag @s remove ExWeapons.Abnormal.iceLv3
-playsound minecraft:block.glass.break master @s ~ ~ ~ 1 1
+playsound minecraft:block.glass.break master @a ~ ~ ~ 1 1
 scoreboard players set @s ExWeapons.Abnormal.ice.frozenTick 100
 tag @s add ExWeapons.Abnormal.ice.frozen
 scoreboard players reset @s ExWeapons.Abnormal.waterTick

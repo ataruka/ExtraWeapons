@@ -9,15 +9,15 @@
  execute if entity @s[scores={ExWeapons.ZFacing=-1}] run scoreboard players set @s ExWeapons.slimeMove 35
  execute if entity @s[scores={ExWeapons.ZFacing=-1}] run execute at @s rotated ~ 0 positioned ~ ~ ~ run function exweapons:core/other/slime_move
 
- execute anchored eyes rotated ~ ~ run summon armor_stand ^ ^ ^ {Rotation:[0F,0F],Tags:["exweapons.kuzyakusen.senpu","exweapons.armor_set"],Marker:1b,Invisible:1b,DisabledSlots:4144959}
+ execute anchored eyes rotated ~ ~ run summon armor_stand ^ ^ ^ {Rotation:[0F,0F],Tags:["exweapons.kuzyakusen.senpu","exweapons.armor_set"],Marker:1b,Invisible:1b,DisabledSlots:4144959,Silent:1b}
  execute anchored eyes run tp @e[limit=1,sort=nearest,tag=exweapons.armor_set,type=armor_stand] ^ ^ ^2 ~ ~
  scoreboard players operation @e[limit=1,sort=nearest,tag=exweapons.armor_set,type=armor_stand] ExWeapons.Attacker = @s OhMyDatID
- scoreboard players operation @e[limit=1,sort=nearest,tag=exweapons.armor_set,type=armor_stand] ExWeapons.kuzyakusen.SenpuTick = $kuzyakusen_SenpuDistance ExWeapons.setting
+ scoreboard players operation @e[limit=1,sort=nearest,tag=exweapons.armor_set,type=armor_stand] ExWeapons.kuzyakusen.SenpuTick = $kuzyakusen_SenpuDuration ExWeapons.setting
  execute as @e[limit=1,sort=nearest,tag=exweapons.armor_set,type=armor_stand] at @s run function exweapons:core/weapons/kuzyakusen/senpu/2.damage
  execute as @e[limit=1,sort=nearest,tag=exweapons.armor_set,type=armor_stand] at @s run function exweapons:core/weapons/kuzyakusen/senpu/3.tp
  tag @e[limit=1,sort=nearest,tag=exweapons.armor_set,type=armor_stand] remove exweapons.armor_set
  tag @s add exweapons.kuzyakusen.senpuCT
- scoreboard players operation @s ExWeapons.kuzyakusen.SenpuCT = $kyzakusen_SenpuCoolTime ExWeapons.setting
+ scoreboard players operation @s ExWeapons.kuzyakusen.SenpuCT = $kuzyakusen_SenpuCoolTime ExWeapons.setting
  playsound minecraft:entity.player.attack.weak master @a ~ ~ ~ 2 2
  playsound minecraft:entity.player.attack.weak master @a ~ ~ ~ 2 2
  playsound minecraft:block.fire.extinguish master @a ~ ~ ~ 2 2

@@ -6,6 +6,7 @@
  execute store result score $Tmp ExWeapons.rng run data get storage exweapons: item.weapon.nbt.ChargePoint
  scoreboard players add $Tmp ExWeapons.rng 12
  execute if score $Tmp ExWeapons.rng matches 200.. run scoreboard players set $Tmp ExWeapons.rng 200
+ execute store result storage exweapons: item.weapon.nbt.ChargePoint int 1 run scoreboard players get $Tmp ExWeapons.rng
  data merge storage exweapons: {item:{weapon:{nbt:{Attack:0,Charged:1}}}}
  item modify entity @s weapon.mainhand exweapons:nbtcopy_weapon
  data remove storage exweapons: item.weapon.nbt
