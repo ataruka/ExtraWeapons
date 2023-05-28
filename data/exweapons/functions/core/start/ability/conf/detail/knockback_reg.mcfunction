@@ -7,6 +7,8 @@ attribute @s generic.knockback_resistance modifier remove 67-1-9CB1-0-3
 attribute @s generic.knockback_resistance modifier remove 67-1-9CB1-0-4
 attribute @s generic.knockback_resistance modifier remove 67-1-9CB1-0-5
 attribute @s generic.knockback_resistance modifier remove 67-1-9CB1-0-6
+## 記録
+scoreboard players operation @s ExWeapons.DetailAbility.KnockbackResistance_Last = @s ExWeapons.DetailAbility.KnockbackResistance
 ## 計算
 ### 小数点第2桁目
 scoreboard players operation $Tmp ExWeapons.rnd = @s ExWeapons.DetailAbility.KnockbackResistance

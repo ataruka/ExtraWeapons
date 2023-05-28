@@ -4,6 +4,8 @@
     "better_collision:core/load",
     "oh_my_dat:sys/load",
     "util:settings/default",
-    "util:load"
+    "util:load",
+    "score_damage:core/init",
+    "score_to_health:load"
   ]
 }

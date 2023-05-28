@@ -32,6 +32,7 @@
  scoreboard players operation $Damage ExWeapons.rng = $Tmp ExWeapons.rng
 
  scoreboard players set $DamageType ExWeapons.rng 3
+ scoreboard players set $Damageid ExWeapons.rng 9
 
  execute if entity @e[tag=tmp.owner,type=player] if score $FriendlyFire ExWeapons.setting matches 0 rotated ~-45 0 positioned ^ ^ ^6 run tag @e[distance=..5,type=!#exweapons:non_living,tag=!exweapons.protect,type=!#exweapons:protect,tag=!tmp.owner,type=!player] add tmp.target
  execute if entity @e[tag=tmp.owner,type=player] if score $FriendlyFire ExWeapons.setting matches 1 rotated ~-45 0 positioned ^ ^ ^6 run tag @e[distance=..5,type=!#exweapons:non_living,tag=!exweapons.protect,type=!#exweapons:protect,tag=!tmp.owner] add tmp.target

@@ -11,10 +11,10 @@
  execute as @e[type=text_display,tag=exweapons.textentity] at @s run function exweapons:core/other/text_kill
 
 ## 毎日のプレゼントボックス
- function #util:datetime
- execute store result score $System ExWeapons.day run data get storage util: out.day
- execute as @a[advancements={exweapons:start=false}] at @s run function exweapons:core/item/everyday_giftbox/0.give
- execute as @a at @s unless score @s ExWeapons.day = $System ExWeapons.day run function exweapons:core/item/everyday_giftbox/0.give
+# function #util:datetime
+# execute store result score $System ExWeapons.day run data get storage util: out.day
+# execute as @a[advancements={exweapons:start=false}] at @s run function exweapons:core/item/everyday_giftbox/0.give
+# execute as @a at @s unless score @s ExWeapons.day = $System ExWeapons.day run function exweapons:core/item/everyday_giftbox/0.give
 
 
 ## なんか
@@ -25,8 +25,8 @@
  execute store result storage exweapons: text.kuzyakusen.senpu_duration float 1 run scoreboard players get $kuzyakusen_SenpuDuration ExWeapons.setting
 
 ## Ability
- execute as @e[type=!#exweapons:non_living] at @s run function exweapons:core/start/ability/reset
- execute as @e[type=!#exweapons:non_living] at @s run function exweapons:core/start/ability/add
- execute as @e[type=!#exweapons:non_living] at @s run function exweapons:core/start/ability/conf
+# execute as @e[type=!#exweapons:non_living] at @s run function exweapons:core/start/ability/reset
+# execute as @e[type=!#exweapons:non_living] at @s run function exweapons:core/start/ability/add
+# execute as @e[type=!#exweapons:non_living] at @s run function exweapons:core/start/ability/conf
 
  execute as @a at @e[type=!#exweapons:non_living,distance=..50] at @s unless score @s OhMyDatID matches -2147483648..2147483647 run function #oh_my_dat:please

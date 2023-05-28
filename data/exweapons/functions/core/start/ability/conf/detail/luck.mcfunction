@@ -7,6 +7,8 @@ attribute @s generic.luck modifier remove 6A-1-9CB1-0-3
 attribute @s generic.luck modifier remove 6A-1-9CB1-0-4
 attribute @s generic.luck modifier remove 6A-1-9CB1-0-5
 attribute @s generic.luck modifier remove 6A-1-9CB1-0-6
+## 記録
+scoreboard players operation @s ExWeapons.DetailAbility.Luck_Last = @s ExWeapons.DetailAbility.Luck
 ## 計算
 ### 小数点第2桁目
 scoreboard players operation $Tmp ExWeapons.rnd = @s ExWeapons.DetailAbility.Luck

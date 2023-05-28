@@ -7,6 +7,8 @@ attribute @s generic.armor_toughness modifier remove 69-1-9CB1-0-3
 attribute @s generic.armor_toughness modifier remove 69-1-9CB1-0-4
 attribute @s generic.armor_toughness modifier remove 69-1-9CB1-0-5
 attribute @s generic.armor_toughness modifier remove 69-1-9CB1-0-6
+## 記録
+scoreboard players operation @s ExWeapons.DetailAbility.ArmorToughness_Last = @s ExWeapons.DetailAbility.ArmorToughness
 ## 計算
 ### 小数点第2桁目
 scoreboard players operation $Tmp ExWeapons.rnd = @s ExWeapons.DetailAbility.ArmorToughness

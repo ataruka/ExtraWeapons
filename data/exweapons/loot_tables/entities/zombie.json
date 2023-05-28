@@ -49,7 +49,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{exweapons:{id:015d,item:{}},CustomModelData:100010}"
+              "tag": "{exweapons:{id:000d,item:{}},CustomModelData:100010}"
             }
           ]
         },

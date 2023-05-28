@@ -42,8 +42,9 @@ scoreboard objectives add ExWeapons.Abnormal.voidAttackSpeedTick dummy
 scoreboard objectives add ExWeapons.Abnormal.voidMaxHealthTick dummy
 scoreboard objectives add ExWeapons.Abnormal.voidKBResistTick dummy
 ## Ability
-## 記録
+### 記録
 scoreboard objectives add ExWeapons.DetailAbility.Health_Last dummy
+
 scoreboard objectives add ExWeapons.DetailAbility.AttackDamage_Last dummy
 scoreboard objectives add ExWeapons.DetailAbility.ExAttackDamage_Last dummy
 scoreboard objectives add ExWeapons.DetailAbility.KnockbackResistance_Last dummy
@@ -170,7 +171,7 @@ execute unless score $FriendlyFire ExWeapons.setting matches -2147483648..214748
 ## Ability(1 true|0 false)
 execute unless score $Ability ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $Ability ExWeapons.setting 1
 ## ScoreToDamageMode(1 true|0 false)※実験機能
-execute unless score $ScoreToDamageMode ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $ScoreToDamageMode ExWeapons.setting 1
+execute unless score $ScoreToDamageMode ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $ScoreToDamageMode ExWeapons.setting 0
 
 # 初期起動メッセージ
 tellraw @a [{"text": "[ExtraWeapons] データパックの読み込みが完了しました。"}]

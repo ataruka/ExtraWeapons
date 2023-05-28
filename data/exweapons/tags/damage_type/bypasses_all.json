@@ -1,0 +1,16 @@
+{
+  "values": [
+    "exweapons:mob_attack",
+    "exweapons:death/on_fire",
+    "exweapons:death/in_fire",
+    "exweapons:death/dry_out",
+    "exweapons:death/lava",
+    "exweapons:death/cactus",
+    "exweapons:death/sweet_berry_bush",
+    "exweapons:death/sting",
+    "exweapons:death/freeze",
+    "exweapons:death/lightning_bolt",
+    "exweapons:death/drown",
+    "exweapons:death/sonic_boom"
+  ]
+}

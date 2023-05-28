@@ -1,0 +1,2 @@
+execute if score $CommandRng ExWeapons.rng matches 229..278 run function exweapons:core/other/concat/takeout/129-328/229-328/229-278
+execute if score $CommandRng ExWeapons.rng matches 279..328 run function exweapons:core/other/concat/takeout/129-328/229-328/279-328

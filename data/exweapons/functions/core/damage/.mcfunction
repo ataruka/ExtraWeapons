@@ -11,7 +11,9 @@
  execute if score $DamageType ExWeapons.rng matches 6 run function exweapons:core/damage/cal/wind
  execute if score $DamageType ExWeapons.rng matches 7 run function exweapons:core/damage/cal/normal
  execute if score $DamageType ExWeapons.rng matches 8 run function exweapons:core/damage/cal/void
+ scoreboard players reset $DamageType ExWeapons.rng
  function exweapons:core/damage/cal/protection
 # ダメージ適用
  scoreboard players operation $Tmp ExWeapons.rng = @s ExWeapons.damagerng
- function exweapons:core/damage/run
+ execute if score $ScoreToDamageMode ExWeapons.setting matches 1 run function exweapons:core/damage/score_to_health_run
+ execute if score $ScoreToDamageMode ExWeapons.setting matches 0 run function exweapons:core/damage/run

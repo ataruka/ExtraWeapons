@@ -1,4 +1,7 @@
 # 読み込み時の値適応-MaxHealth
+## 記録
+execute store result score $Health ExWeapons.rng run data get entity @s Health 1000
+scoreboard players operation @s ExWeapons.DetailAbility.Health_Last = @s ExWeapons.DetailAbility.Health
 ## リセット
 attribute @s generic.max_health modifier remove 65-1-9CB1-0-1
 attribute @s generic.max_health modifier remove 65-1-9CB1-0-2
@@ -89,3 +92,7 @@ execute if score $Tmp ExWeapons.rng matches 6 run attribute @s generic.max_healt
 execute if score $Tmp ExWeapons.rng matches 7 run attribute @s generic.max_health modifier add 65-1-9CB1-0-6 "Ability HP4桁目" 7000 add
 execute if score $Tmp ExWeapons.rng matches 8 run attribute @s generic.max_health modifier add 65-1-9CB1-0-6 "Ability HP4桁目" 8000 add
 execute if score $Tmp ExWeapons.rng matches 9 run attribute @s generic.max_health modifier add 65-1-9CB1-0-6 "Ability HP4桁目" 9000 add
+## 最終記録
+execute store result score $MaxHealth ExWeapons.rng run attribute @s generic.max_health get 1000
+### 記録内容に応じて効果発動
+execute if score $MaxHealth ExWeapons.rng < $Health ExWeapons.rng run effect give @s instant_health 1 0 true
