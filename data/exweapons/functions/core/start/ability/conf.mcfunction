@@ -23,5 +23,4 @@ execute unless score @s ExWeapons.DetailAbility.ArmorToughness = @s ExWeapons.De
 execute unless score @s ExWeapons.DetailAbility.Luck = @s ExWeapons.DetailAbility.Luck_Last run function exweapons:core/start/ability/conf/detail/luck
 ### 乗算
 execute unless score @s ExWeapons.DetailAbility.HealthMul = $HealthMul ExWeapons.rng run function exweapons:core/start/ability/conf/detail/mul/max_health
-#### ちょっと計算延長
-execute if entity @s[nbt={Attributes:[{Modifiers:[{UUID:[I;107,105649,0,1]}]}]}] run say コマブロってすげー！
+scoreboard players reset $CommandPositionSet ExWeapons.rng
