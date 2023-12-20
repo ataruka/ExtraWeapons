@@ -1,0 +1,1 @@
+give @s iron_nugget{display:{Name:'{"translate":"item.exweapons.brass_shard","color":"white","italic":false}',Lore:['{"translate":"itemlore.exweapons.brass_shard","color":"gold","italic":false}']},HideFlags:127,CustomModelData:100010,exweapons:{Metaid:001d}} 1

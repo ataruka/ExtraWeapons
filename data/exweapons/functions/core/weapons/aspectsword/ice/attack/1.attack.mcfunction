@@ -17,11 +17,11 @@
 ### Mob
 #execute if entity @e[tag=tmp.owner,type=!player] anchored eyes positioned ^ ^ ^2 run tag @e[distance=..3,type=!#exweapons:non_living,tag=!tmp.owner] add tmp.target
 ### 特殊
- execute positioned ^ ^ ^4 as @e[distance=..9,nbt={HurtTime:10s}] at @s on attacker if entity @s[tag=tmp.owner] run tag @e[sort=nearest,limit=1] add tmp.target
+ execute positioned ^ ^ ^4 as @e[distance=..9,tag=!tmp.owner] at @s on attacker if entity @s[tag=tmp.owner] as @e[sort=nearest,limit=1,distance=..0.1] run function exweapons:core/damage/attack_track
 ### Run
  execute as @e[tag=tmp.target] run scoreboard players set @s ExWeapons.Abnormal.iceTick 100
  execute as @e[tag=tmp.target] run tag @s add ExWeapons.Abnormal.iceLv1
  
 # リセット
- tag @e remove tmp.target
+ tag @e[tag=tmp.target] remove tmp.target
  tag @s remove tmp.owner

@@ -5,7 +5,7 @@
     "effects": {
       "minecraft:resistance": 
       {
-        "amplifier": 4
+        "amplifier": 9
       }
     }
   }

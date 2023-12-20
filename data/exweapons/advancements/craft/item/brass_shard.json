@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "exweapons:item/brass_shard"
+      }
+    }
+  },
+  "rewards": {
+    "function": "exweapons:core/craft/item/brass_shard"
+  }
+}

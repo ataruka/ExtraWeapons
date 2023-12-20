@@ -1,0 +1,14 @@
+{
+  "function": "minecraft:copy_nbt",
+  "source": {
+    "type": "minecraft:storage",
+    "source": "open:"
+  },
+  "ops": [
+    {
+      "source": "Tmp[]",
+      "target": "exweapons.ability",
+      "op": "append"
+    }
+  ]
+}

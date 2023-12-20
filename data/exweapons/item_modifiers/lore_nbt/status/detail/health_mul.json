@@ -1,0 +1,92 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "translate": "itemlore.exweapons.ability.detail.health",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": "+",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "nbt": "out[0]",
+          "storage": "util:",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "nbt": "out[1]",
+          "storage": "util:",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "nbt": "out[2]",
+          "storage": "util:",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "nbt": "out[3]",
+          "storage": "util:",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "nbt": "out[4]",
+          "storage": "util:",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "nbt": "out[5]",
+          "storage": "util:",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "nbt": "out[6]",
+          "storage": "util:",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "nbt": "out[7]",
+          "storage": "util:",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "nbt": "out[8]",
+          "storage": "util:",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "nbt": "out[9]",
+          "storage": "util:",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "nbt": "out[10]",
+          "storage": "util:",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": "%",
+          "color": "blue",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false
+  }
+]

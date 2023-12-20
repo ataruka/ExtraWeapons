@@ -1,0 +1,21 @@
+# sound
+ playsound minecraft:entity.iron_golem.attack master @a ~ ~ ~ 2 2 0
+ playsound minecraft:entity.iron_golem.attack master @a ~ ~ ~ 2 2 0
+ playsound minecraft:entity.iron_golem.attack master @a ~ ~ ~ 2 2 0
+ playsound minecraft:entity.player.attack.knockback master @a ~ ~ ~ 2 0.5 0
+ playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 2 1.5 0
+ playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 2 1.5 0
+ playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 2 2 0
+ playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 2 2 0
+ playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 2 2 0
+ playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 2 2 0
+ playsound minecraft:entity.player.attack.weak master @a ~ ~ ~ 2 2 0
+ playsound minecraft:entity.player.attack.weak master @a ~ ~ ~ 2 2 0
+ playsound minecraft:entity.player.attack.weak master @a ~ ~ ~ 2 2 0
+ playsound minecraft:entity.player.attack.weak master @a ~ ~ ~ 2 2 0
+ playsound minecraft:entity.player.attack.weak master @a ~ ~ ~ 2 2 0
+ playsound minecraft:item.bucket.empty master @a ~ ~ ~ 1 1 0
+ playsound minecraft:item.bucket.empty master @a ~ ~ ~ 1 1 0
+ playsound minecraft:item.bucket.empty master @a ~ ~ ~ 1 2 0
+ playsound minecraft:item.bucket.empty master @a ~ ~ ~ 1 2 0
+ playsound minecraft:item.bucket.empty master @a ~ ~ ~ 1 2 0

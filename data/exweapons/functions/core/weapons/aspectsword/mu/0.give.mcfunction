@@ -1,0 +1,1 @@
+give @p stone_sword{display:{Name:'{"translate":"item.exweapons.mu_aspect_sword","color":"aqua","italic":false}',Lore:['{"translate":"itemlore.exweapons.mu_aspect_sword","color":"gold","italic":false}']},RepairCost:12000000,CustomModelData:100020,exweapons:{id:003.7d,Itemtag:{abilityid:"mainhand",opened:0b,Slot:2},weapon:{},ability:[]}} 1

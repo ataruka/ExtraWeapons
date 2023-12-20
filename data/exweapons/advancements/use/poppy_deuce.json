@@ -4,7 +4,7 @@
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "nbt": "{exweapons:{id:010d,item:{power:0}}}"
+          "nbt": "{exweapons:{id:004d,item:{power:0}}}"
         }
       }
     }

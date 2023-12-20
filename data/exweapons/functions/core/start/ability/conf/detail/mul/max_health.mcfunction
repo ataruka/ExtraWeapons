@@ -1,7 +1,6 @@
 # 読み込み時の値適応-MaxHealth
 ## 記録
-execute store result score $Health ExWeapons.rng run data get entity @s Health 1000
-scoreboard players add $CommandPositionSet ExWeapons.rng 1
+scoreboard players add $CommandPositionSet_Health ExWeapons.rng 1
 ## リセット
 attribute @s generic.max_health modifier remove 6B-1-9CB1-0-1
 ## 結合-計算
@@ -14,9 +13,7 @@ function exweapons:core/other/concat/sort
 
 data merge storage exweapons: {command:{ability:["attribute ","player_name"," generic.max_health modifier add 6B-1-9CB1-0-1 Ability_HPMul ","0","0","0",".","0","0","0"," multiply"]}}
 ### プレイヤー名を取得 エンティティは↓[https://github.com/ataruka/ExtraWeapons/blob/cc07a6dec20a8a3381eb49370250622b8e81e850/data/exweapons/functions/core/start/ability/conf/detail/mul/max_health.mcfunction#L35C15]
-execute if entity @s[type=player] run loot spawn ~ ~ ~ loot exweapons:get_player_name
-execute if entity @s[type=player] if entity @e[type=item,nbt={Item:{"id":"minecraft:player_head"}},limit=1,sort=nearest,distance=..0.1] run data modify storage exweapons: command.ability[1] set from entity @e[type=item,nbt={Item:{"id":"minecraft:player_head"}},limit=1,sort=nearest] Item.tag.SkullOwner.Name
-execute if entity @s[type=player] if entity @e[type=item,nbt={Item:{"id":"minecraft:player_head"}},limit=1,sort=nearest,distance=..0.1] run kill @e[type=item,nbt={Item:{"id":"minecraft:player_head"}},limit=1,sort=nearest]
+execute if entity @s[type=player] run function exweapons:core/other/get_player_name
 
 data modify storage exweapons: command.ability[-2] set from storage util: out[-1]
 data remove storage util: out[-1]
@@ -37,5 +34,5 @@ data remove storage util: out[-1]
 execute if entity @s[type=!player] run function exweapons:core/other/concat/get_entity_name/
 
 data modify storage exweapons: command.run set from storage exweapons: command.ability
-scoreboard players operation $CommandPosition ExWeapons.rng = $CommandPositionSet ExWeapons.rng
+scoreboard players operation $CommandPosition ExWeapons.rng = $CommandPositionSet_Health ExWeapons.rng
 execute positioned 13401 -64 13401 run function exweapons:core/other/concat/position_set

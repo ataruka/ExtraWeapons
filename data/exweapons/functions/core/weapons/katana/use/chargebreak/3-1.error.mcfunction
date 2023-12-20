@@ -1,0 +1,1 @@
+execute if entity @s[type=player] run tellraw @s [{"text": "[ExWeapons]ERROR>> ","color": "red"},{"translate":"chatlog.exweapons.cp_is_insufficient","color": "red"},{"text": "(","color": "red"},{"score":{"name":"$Tmp","objective":"ExWeapons.rng"},"color": "red"},{"text": "/200)","color": "red"}]

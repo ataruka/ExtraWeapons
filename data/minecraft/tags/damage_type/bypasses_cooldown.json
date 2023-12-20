@@ -1,5 +1,6 @@
 {
   "values": [
-    "#exweapons:bypasses_all"
+    "#exweapons:bypasses_all",
+    "minecraft:arrow"
   ]
 }

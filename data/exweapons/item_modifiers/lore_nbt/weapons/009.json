@@ -1,0 +1,12 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    {
+      "translate": "itemlore.exweapons.void_aspect_sword",
+      "color": "gold",
+      "italic": false
+    }
+  ],
+  "replace": true
+}

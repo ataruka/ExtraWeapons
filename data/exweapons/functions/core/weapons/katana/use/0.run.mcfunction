@@ -1,0 +1,12 @@
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Mode:0,ChargePoint:200,Charged:1}}}}},tag=!tmp.check,predicate=exweapons:is_sneaking] run function exweapons:core/weapons/katana/use/chargebreak/0-1.run
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Mode:1,ChargePoint:200,Charged:1}}}}},tag=!tmp.check,predicate=exweapons:is_sneaking] run function exweapons:core/weapons/katana/use/chargebreak/0-1.run
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Charged:1}}}}},tag=!tmp.check,predicate=exweapons:is_sneaking,type=player] unless entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{ChargePoint:200}}}}}] run function exweapons:core/weapons/katana/use/chargebreak/3-1.error
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Mode:0}}}}},tag=!tmp.check] run function exweapons:core/weapons/katana/use/mode0/0.run
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Mode:1,ModeAttack:0}}}}},tag=!tmp.check] run function exweapons:core/weapons/katana/use/mode1/0-1.run
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Mode:1,ModeAttack:1}}}}},tag=!tmp.check] run function exweapons:core/weapons/katana/use/mode1/0-2.run
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Mode:1,ModeAttack:2}}}}},tag=!tmp.check] run function exweapons:core/weapons/katana/use/mode1/0-3.run
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Mode:1,ModeAttack:3}}}}},tag=!tmp.check] run function exweapons:core/weapons/katana/use/mode1/0-4.run
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Mode:1,ModeAttack:4}}}}},tag=!tmp.check] run function exweapons:core/weapons/katana/use/mode1/0-5.run
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Mode:1,ModeAttack:5}}}}},tag=!tmp.check] run function exweapons:core/weapons/katana/use/mode1/0-6.run
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d,weapon:{Mode:1,ModeAttack:6}}}}},tag=!tmp.check] run function exweapons:core/weapons/katana/use/mode1/0-7.run
+tag @s remove tmp.check

@@ -1,15 +1,16 @@
 # リセット(スコア)
 ## 状態異常-Abnormal(Status)
 ### 継続時間
-scoreboard players set @s ExWeapons.Abnormal.fireTick 0
-scoreboard players set @s ExWeapons.Abnormal.waterTick 0
-scoreboard players set @s ExWeapons.Abnormal.thunderTick 0
-scoreboard players set @s ExWeapons.Abnormal.grassTick 0
-scoreboard players set @s ExWeapons.Abnormal.iceTick 0
-scoreboard players set @s ExWeapons.Abnormal.grassThunderTick 0
-scoreboard players set @s ExWeapons.Abnormal.voidTick 0
+execute if entity @s[scores={ExWeapons.Abnormal.fireTick=-2147483648..2147483647}] run scoreboard players set @s ExWeapons.Abnormal.fireTick 0
+execute if entity @s[scores={ExWeapons.Abnormal.waterTick=-2147483648..2147483647}] run scoreboard players set @s ExWeapons.Abnormal.waterTick 0
+execute if entity @s[scores={ExWeapons.Abnormal.thunderTick=-2147483648..2147483647}] run scoreboard players set @s ExWeapons.Abnormal.thunderTick 0
+execute if entity @s[scores={ExWeapons.Abnormal.grassTick=-2147483648..2147483647}] run scoreboard players set @s ExWeapons.Abnormal.grassTick 0
+execute if entity @s[scores={ExWeapons.Abnormal.iceTick=-2147483648..2147483647}] run scoreboard players set @s ExWeapons.Abnormal.iceTick 0
+execute if entity @s[scores={ExWeapons.Abnormal.grassThunderTick=-2147483648..2147483647}] run scoreboard players set @s ExWeapons.Abnormal.grassThunderTick 0
+execute if entity @s[scores={ExWeapons.Abnormal.voidTick=-2147483648..2147483647}] run scoreboard players set @s ExWeapons.Abnormal.voidTick 0
 
 scoreboard players set @s ExWeapons.Abnormal.ice.frozenTick 0
+scoreboard players reset @s ExWeapons.Abnormal.voidTriggerTick
 ### 効果発動待機時間
 scoreboard players reset @s ExWeapons.Abnormal.fireDamageTick
 scoreboard players reset @s ExWeapons.Abnormal.waterDamageTick
@@ -97,3 +98,4 @@ tag @s remove tmp.check
 tag @s remove tmp.noattack
 tag @s remove tmp.damage
 tag @s remove tmp.target
+scoreboard players reset @s ExWeapons.death

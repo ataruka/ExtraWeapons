@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "translate": "itemlore.exweapons.ability.basicstatus",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false
+  }
+]

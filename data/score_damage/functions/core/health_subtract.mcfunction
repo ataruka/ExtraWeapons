@@ -28,8 +28,11 @@
     # Common
         execute if score $SubtractedHealth ScoreDamageCore matches ..0 run function exweapons:core/other/death/
 # 演出
-    execute if score $SubtractedHealth ScoreDamageCore matches 1.. if entity @e[tag=tmp.owner,limit=1,sort=nearest] run damage @s 0.000001 exweapons:mob_attack by @e[tag=tmp.owner,limit=1,sort=nearest]
-    execute if score $SubtractedHealth ScoreDamageCore matches 1.. unless entity @e[tag=tmp.owner,limit=1,sort=nearest] run damage @s 0.000001 exweapons:mob_attack
+    execute if score $SubtractedHealth ScoreDamageCore matches 1.. if entity @e[tag=tmp.owner,limit=1,sort=nearest] if data storage score_damage: Argument{BypassKB:0b} run damage @s 0.000001 exweapons:mob_attack by @e[tag=tmp.owner,limit=1,sort=nearest]
+    execute if score $SubtractedHealth ScoreDamageCore matches 1.. unless entity @e[tag=tmp.owner,limit=1,sort=nearest] if data storage score_damage: Argument{BypassKB:0b} run damage @s 0.000001 exweapons:mob_attack
+    execute if score $SubtractedHealth ScoreDamageCore matches 1.. if entity @e[tag=tmp.owner,limit=1,sort=nearest] if data storage score_damage: Argument{BypassKB:1b} run damage @s 0.000001 minecraft:bad_respawn_point by @e[tag=tmp.owner,limit=1,sort=nearest]
+    execute if score $SubtractedHealth ScoreDamageCore matches 1.. unless entity @e[tag=tmp.owner,limit=1,sort=nearest] if data storage score_damage: Argument{BypassKB:1b} run damage @s 0.000001 minecraft:bad_respawn_point
+    
     execute if data storage score_damage: Argument{DisableParticle:0b} at @s run function score_damage:core/damage_indicator
 # リセット
     scoreboard players reset $SubtractedHealth ScoreDamageCore

@@ -12,7 +12,7 @@ attribute @s generic.max_health modifier remove 65-1-9CB1-0-5
 attribute @s generic.max_health modifier remove 65-1-9CB1-0-6
 ## 計算
 ### 小数点第2桁目
-scoreboard players operation $Tmp ExWeapons.rnd = @s ExWeapons.DetailAbility.Health
+scoreboard players operation $Tmp ExWeapons.rng = @s ExWeapons.DetailAbility.Health
 scoreboard players operation $Tmp ExWeapons.rng %= #10 ExWeapons.rng
 execute if score $Tmp ExWeapons.rng matches 1 run attribute @s generic.max_health modifier add 65-1-9CB1-0-1 "Ability HP小数点第2桁目" 0.01 add
 execute if score $Tmp ExWeapons.rng matches 2 run attribute @s generic.max_health modifier add 65-1-9CB1-0-1 "Ability HP小数点第2桁目" 0.02 add
@@ -24,7 +24,7 @@ execute if score $Tmp ExWeapons.rng matches 7 run attribute @s generic.max_healt
 execute if score $Tmp ExWeapons.rng matches 8 run attribute @s generic.max_health modifier add 65-1-9CB1-0-1 "Ability HP小数点第2桁目" 0.08 add
 execute if score $Tmp ExWeapons.rng matches 9 run attribute @s generic.max_health modifier add 65-1-9CB1-0-1 "Ability HP小数点第2桁目" 0.09 add
 ### 小数点第1桁目
-scoreboard players operation $Tmp ExWeapons.rnd = @s ExWeapons.DetailAbility.Health
+scoreboard players operation $Tmp ExWeapons.rng = @s ExWeapons.DetailAbility.Health
 scoreboard players operation $Tmp ExWeapons.rng /= #10 ExWeapons.rng
 scoreboard players operation $Tmp ExWeapons.rng %= #100 ExWeapons.rng
 execute if score $Tmp ExWeapons.rng matches 1 run attribute @s generic.max_health modifier add 65-1-9CB1-0-2 "Ability HP小数点第1桁目" 0.1 add
@@ -37,7 +37,7 @@ execute if score $Tmp ExWeapons.rng matches 7 run attribute @s generic.max_healt
 execute if score $Tmp ExWeapons.rng matches 8 run attribute @s generic.max_health modifier add 65-1-9CB1-0-2 "Ability HP小数点第1桁目" 0.8 add
 execute if score $Tmp ExWeapons.rng matches 9 run attribute @s generic.max_health modifier add 65-1-9CB1-0-2 "Ability HP小数点第1桁目" 0.9 add
 ### 1桁目
-scoreboard players operation $Tmp ExWeapons.rnd = @s ExWeapons.DetailAbility.Health
+scoreboard players operation $Tmp ExWeapons.rng = @s ExWeapons.DetailAbility.Health
 scoreboard players operation $Tmp ExWeapons.rng /= #100 ExWeapons.rng
 scoreboard players operation $Tmp ExWeapons.rng %= #10 ExWeapons.rng
 execute if score $Tmp ExWeapons.rng matches 1 run attribute @s generic.max_health modifier add 65-1-9CB1-0-3 "Ability HP1桁目" 1 add
@@ -50,7 +50,7 @@ execute if score $Tmp ExWeapons.rng matches 7 run attribute @s generic.max_healt
 execute if score $Tmp ExWeapons.rng matches 8 run attribute @s generic.max_health modifier add 65-1-9CB1-0-3 "Ability HP1桁目" 8 add
 execute if score $Tmp ExWeapons.rng matches 9 run attribute @s generic.max_health modifier add 65-1-9CB1-0-3 "Ability HP1桁目" 9 add
 ### 2桁目
-scoreboard players operation $Tmp ExWeapons.rnd = @s ExWeapons.DetailAbility.Health
+scoreboard players operation $Tmp ExWeapons.rng = @s ExWeapons.DetailAbility.Health
 scoreboard players operation $Tmp ExWeapons.rng /= #100 ExWeapons.rng
 scoreboard players operation $Tmp ExWeapons.rng /= #10 ExWeapons.rng
 scoreboard players operation $Tmp ExWeapons.rng %= #10 ExWeapons.rng
@@ -64,7 +64,7 @@ execute if score $Tmp ExWeapons.rng matches 7 run attribute @s generic.max_healt
 execute if score $Tmp ExWeapons.rng matches 8 run attribute @s generic.max_health modifier add 65-1-9CB1-0-4 "Ability HP2桁目" 80 add
 execute if score $Tmp ExWeapons.rng matches 9 run attribute @s generic.max_health modifier add 65-1-9CB1-0-4 "Ability HP2桁目" 90 add
 ### 3桁目
-scoreboard players operation $Tmp ExWeapons.rnd = @s ExWeapons.DetailAbility.Health
+scoreboard players operation $Tmp ExWeapons.rng = @s ExWeapons.DetailAbility.Health
 scoreboard players operation $Tmp ExWeapons.rng /= #100 ExWeapons.rng
 scoreboard players operation $Tmp ExWeapons.rng /= #100 ExWeapons.rng
 scoreboard players operation $Tmp ExWeapons.rng %= #10 ExWeapons.rng
@@ -78,7 +78,7 @@ execute if score $Tmp ExWeapons.rng matches 7 run attribute @s generic.max_healt
 execute if score $Tmp ExWeapons.rng matches 8 run attribute @s generic.max_health modifier add 65-1-9CB1-0-5 "Ability HP3桁目" 800 add
 execute if score $Tmp ExWeapons.rng matches 9 run attribute @s generic.max_health modifier add 65-1-9CB1-0-5 "Ability HP3桁目" 900 add
 ### 4桁目
-scoreboard players operation $Tmp ExWeapons.rnd = @s ExWeapons.DetailAbility.Health
+scoreboard players operation $Tmp ExWeapons.rng = @s ExWeapons.DetailAbility.Health
 scoreboard players operation $Tmp ExWeapons.rng /= #100 ExWeapons.rng
 scoreboard players operation $Tmp ExWeapons.rng /= #100 ExWeapons.rng
 scoreboard players operation $Tmp ExWeapons.rng /= #10 ExWeapons.rng

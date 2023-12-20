@@ -1,0 +1,11 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    {
+      "translate": "itemlore.exweapons.opened",
+      "color": "gray"
+    }
+  ],
+  "replace": false
+}

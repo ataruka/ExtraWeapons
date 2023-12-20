@@ -1,0 +1,2 @@
+summon block_display ~ ~ ~ {NoGravity:1b,Silent:1b,Tags:["exweapons.abnormal.frozen"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,0f,-0.5f],scale:[1f,1f,1f]},block_state:{Name:"minecraft:ice"}}
+ride @s mount @e[type=block_display,limit=1,sort=nearest,tag=exweapons.abnormal.frozen]

@@ -1,1 +1,1 @@
-give @s potion{display:{Name:'{"translate":"item.exweapons.makeshift_potion","color":"aqua","italic":false}',Lore:['{"translate":"itemlore.exweapons.makeshift_potion","color":"gold","italic":false}']},HideFlags:127,exweapons:{id:011d,item:{power:0}},CustomPotionColor:8061076} 1
+give @s potion{display:{Name:'{"translate":"item.exweapons.makeshift_potion","color":"aqua","italic":false}',Lore:['{"translate":"itemlore.exweapons.makeshift_potion","color":"gold","italic":false}']},HideFlags:127,exweapons:{id:005d,item:{power:0}},CustomPotionColor:8061076} 1

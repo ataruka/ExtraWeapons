@@ -10,5 +10,5 @@
  execute if entity @e[tag=tmp.owner,type=!player] anchored eyes run tag @e[distance=..6,type=!#exweapons:non_living,tag=!exweapons.protect,type=!#exweapons:protect,tag=!tmp.owner] add tmp.target
 
  effect give @e[tag=tmp.target] slowness 3 4 true
- tag @e remove tmp.target
+ tag @e[tag=tmp.target] remove tmp.target
  tag @s remove tmp.owner

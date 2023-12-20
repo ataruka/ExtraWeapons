@@ -1,0 +1,4 @@
+{
+  "function": "minecraft:set_nbt",
+  "tag": "{exweapons:{Itemtag:{opened:1b}}}"
+}

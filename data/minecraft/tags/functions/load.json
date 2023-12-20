@@ -1,6 +1,6 @@
 {
   "values": [
-    "exweapons:start",
+    "exweapons:load",
     "better_collision:core/load",
     "oh_my_dat:sys/load",
     "util:settings/default",

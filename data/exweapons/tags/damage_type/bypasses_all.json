@@ -11,6 +11,9 @@
     "exweapons:death/freeze",
     "exweapons:death/lightning_bolt",
     "exweapons:death/drown",
-    "exweapons:death/sonic_boom"
+    "exweapons:death/sonic_boom",
+    "exweapons:death/physics",
+    "exweapons:death/physics_bleeding",
+    "minecraft:bad_respawn_point"
   ]
 }
