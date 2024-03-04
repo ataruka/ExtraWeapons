@@ -156,6 +156,9 @@ scoreboard objectives add ExWeapons.katana.useChargeBreak1.tick dummy
 ##### 2-乱れ蝶
 scoreboard objectives add ExWeapons.katana.useChargeBreak2 dummy
 scoreboard objectives add ExWeapons.katana.useChargeBreak2.tick dummy
+scoreboard objectives add ExWeapons.katana.useChargeBreak2.selectorid dummy
+scoreboard objectives add ExWeapons.katana.useChargeBreak2.rideid dummy
+scoreboard objectives add ExWeapons.katana.useChargeBreak2.tpid dummy
 ### ModeChange
 scoreboard objectives add ExWeapons.katana.ModeChange0 dummy
 scoreboard objectives add ExWeapons.katana.ModeChange1 dummy
@@ -217,12 +220,15 @@ execute unless score $katana_useMultiplier_Mode1_6sneak ExWeapons.setting matche
 execute unless score $katana_useMultiplier_Mode1_6sneak_50 ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $katana_useMultiplier_Mode1_6sneak_50 ExWeapons.setting 200
 
 execute unless score $katana_useMultiplier_Mode1_7 ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $katana_useMultiplier_Mode1_7 ExWeapons.setting 50
+
+execute unless score $katana_useMultiplier_Mode0_ChargeBreak ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $katana_useMultiplier_Mode0_ChargeBreak ExWeapons.setting 500
+execute unless score $katana_useMultiplier_Mode0_ChargeBreak_addDamage ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $katana_useMultiplier_Mode0_ChargeBreak_addDamage ExWeapons.setting 10
 ### 孔雀扇-kuzyakusen
 #### 旋風-senpu
 execute unless score $kuzyakusen_SenpuDuration ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $kuzyakusen_SenpuDuration ExWeapons.setting 80
 
 execute unless score $kuzyakusen_SenpuCoolTime ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $kuzyakusen_SenpuCoolTime ExWeapons.setting 70
-execute unless score $kuzyakusen_SenpuDamage ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $kuzyakusen_SenpuDamage ExWeapons.setting 1000
+execute unless score $kuzyakusen_SenpuDamage ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $kuzyakusen_SenpuDamage ExWeapons.setting 100
 ### 一時しのぎのポーション-makeshift_potion
 execute unless score $makeshiftpotion_Duration ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $makeshiftpotion_Duration ExWeapons.setting 300
 ## Abnormal
@@ -231,19 +237,22 @@ execute unless score $makeshiftpotion_Duration ExWeapons.setting matches -214748
 # execute unless score $abnormal_SpreadLv1Damage ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $abnormal_SpreadLv1Damage ExWeapons.setting 30
 # execute unless score $abnormal_SpreadLv2Damage ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $abnormal_SpreadLv2Damage ExWeapons.setting 80
 # execute unless score $abnormal_SpreadLv3Damage ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $abnormal_SpreadLv3Damage ExWeapons.setting 120
+
 ## FF(1 true |0 false)
 execute unless score $FriendlyFire ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $FriendlyFire ExWeapons.setting 1
 ## Ability(1 true|0 false)
 execute unless score $Ability ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $Ability ExWeapons.setting 1
 ## ScoreToDamageMode(1 true|0 false)※実験機能
 execute unless score $ScoreToDamageMode ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $ScoreToDamageMode ExWeapons.setting 1
-## InvulnerabilityTime(~-1 false|0~ true&seconds)※実験機能
-execute unless score $InvulnerabilityTime ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $InvulnerabilityTime ExWeapons.setting 5
+## InvulnerabilityTime(~-1 false|0~ true&tick)※実験機能
+execute unless score $InvulnerabilityTime ExWeapons.setting matches -2147483648..2147483647 run scoreboard players set $InvulnerabilityTime ExWeapons.setting 10
 ## アニメーションの有効化(個人設定)(1 true|0 false)
 scoreboard objectives add ExWeapons.playerSetting_enable-animation dummy
 ## アニメーションの有効化(個人設定)(0 100%|1 70%|2 40%|3 20%)
 scoreboard objectives add ExWeapons.playerSetting_animation-alpha dummy
 
+gamerule commandBlockOutput false
+
 # 再読み込みメッセージ
-tellraw @a [{"text": "[ExtraWeapons v0.2.1.4] データパックの読み込みが完了しました。"}]
-tellraw @a [{"text": "[ExtraWeapons v0.2.1.4] 武器などの設定をしたいときは"},{"text": "ここ","underlined": true,"clickEvent": {"action": "suggest_command","value": "/function exweapons:setting/text"}}]
+tellraw @a [{"text": "[ExtraWeapons v0.2.2.4] データパックの読み込みが完了しました。"}]
+tellraw @a [{"text": "[ExtraWeapons v0.2.2.4] 武器などの設定をしたいときは"},{"text": "ここ","underlined": true,"clickEvent": {"action": "suggest_command","value": "/function exweapons:setting/text"}}]

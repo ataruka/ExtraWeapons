@@ -1,3 +1,3 @@
 # tp
 ## 処理
-#なし
+effect give @s slowness 2 5 true

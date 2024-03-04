@@ -3,8 +3,8 @@
 execute if entity @s[scores={ExWeapons.Ability.Intelligence=1..}] run scoreboard players add @s ExWeapons.DetailAbility.ExAttackDamage 20
 ## Ex攻撃力+5%
 execute if entity @s[scores={ExWeapons.Ability.Intelligence=1..}] run scoreboard players add @s ExWeapons.DetailAbility.ExAttackDamageMul 50
-## Exダメージ軽減+3%
-execute if entity @s[scores={ExWeapons.Ability.Intelligence=1..}] run scoreboard players add @s ExWeapons.DetailAbility.ExAttackProtectionMul 30
+## Exダメージ軽減+0.5%
+execute if entity @s[scores={ExWeapons.Ability.Intelligence=1..}] run scoreboard players add @s ExWeapons.DetailAbility.ExAttackProtectionMul 5
 ## スコア引く
 execute if entity @s[scores={ExWeapons.Ability.Intelligence=1..}] run scoreboard players remove @s ExWeapons.Ability.Intelligence 1
 # 再帰

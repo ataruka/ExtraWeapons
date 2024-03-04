@@ -1,12 +1,11 @@
 # [B]Exダメージ耐性(乗算)
 ## ランダマイズ
 function exweapons:core/other/random_get
-scoreboard players operation #Rnd ExWeapons.rnd = #100 ExWeapons.rng
-scoreboard players operation #Rnd ExWeapons.rnd += #50 ExWeapons.rng
-scoreboard players operation #Rnd ExWeapons.rnd += #30 ExWeapons.rng
+scoreboard players operation #Rnd ExWeapons.rnd = #20 ExWeapons.rng
+scoreboard players operation #Rnd ExWeapons.rnd += #20 ExWeapons.rng
 scoreboard players operation #Rnd ExWeapons.rnd += #1 ExWeapons.rng
 scoreboard players operation @s ExWeapons.rnd %= #Rnd ExWeapons.rnd
-scoreboard players add @s ExWeapons.rnd 240
+scoreboard players add @s ExWeapons.rnd 80
 data modify storage open: Tmp[].detail.Mul_ExAttackProtection set value 0.1
 execute store result storage open: Tmp[].detail.Mul_ExAttackProtection float 0.1 run scoreboard players get @s ExWeapons.rnd
 item modify entity @s weapon.mainhand exweapons:lore_nbt/copy_lore_nbt

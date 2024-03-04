@@ -83,6 +83,7 @@
     "actionbar.exweapons.weapon.katana.mode1_6sneak": "This combo was successful!",
 
     "chatlog.exweapons.cp_is_insufficient": "CP is insufficient.",
+    "chatlog.exweapons.charge_is_insufficient": "charge is insufficient.",
     "chatlog.exweapons.login": "[☆]Welcome to the world!!",
     "chatlog.exweapons.login2": "[☆]Click ",
     "chatlog.exweapons.login3": "here",

@@ -15,8 +15,8 @@
  execute if entity @s[tag=!tmp.noattack] run item modify entity @s weapon.mainhand exweapons:nbtcopy_weapon
  execute if entity @s[tag=!tmp.noattack] run data remove storage exweapons: item.weapon.nbt
 
- execute if entity @s[tag=!tmp.noattack] run summon area_effect_cloud ~ ~0.5 ~ {Tags:["ExWeapons.AEC"],Radius:0f,Duration:6,DurationOnUse:0f,Age:4,Effects:[{Id:2,Amplifier:5b,Duration:15,ShowParticles:0b}]}
- execute if entity @s[tag=!tmp.noattack] run summon area_effect_cloud ~ ~0.5 ~ {Tags:["ExWeapons.AEC"],Radius:0f,Duration:6,DurationOnUse:0f,Age:4,Effects:[{Id:11,Amplifier:5b,Duration:50,ShowParticles:1b}]}
+ execute if entity @s[tag=!tmp.noattack] run summon area_effect_cloud ~ ~0.5 ~ {Tags:["ExWeapons.AEC"],Radius:0f,Duration:6,DurationOnUse:0f,Age:4,effects:[{id:"slowness",amplifier:5b,duration:15,show_particles:0b}]}
+ execute if entity @s[tag=!tmp.noattack] run summon area_effect_cloud ~ ~0.5 ~ {Tags:["ExWeapons.AEC"],Radius:0f,Duration:6,DurationOnUse:0f,Age:4,effects:[{id:"resistance",amplifier:5b,duration:50,show_particles:1b}]}
 
  execute if entity @s[tag=!tmp.noattack] run summon text_display ~ ~2 ~ {billboard:"center",Tags:["ExWeapons.TextEntity"],text:'{"text":"LimitOut-剣技<神の怒り>","color":"red","bold":true,"italic":false}'}
  execute if entity @s[tag=!tmp.noattack] rotated ~45 0 positioned ^ ^ ^6 run summon text_display ^ ^0.5 ^ {billboard:"center",Tags:["ExWeapons.TextEntity"],text:'{"text":"⚠","color":"red","bold":true,"italic":false}'}

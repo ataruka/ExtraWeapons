@@ -41,6 +41,9 @@ execute as @e[scores={ExWeapons.katana.useCombo6=0..},nbt={SelectedItem:{id:"min
 execute as @e[scores={ExWeapons.katana.useCombo6sneak=8},type=!#exweapons:non_living,tag=ExWeapons.AllSelector] at @s run function exweapons:core/weapons/katana/use/mode1/3-6-sneak.particle
 execute as @e[scores={ExWeapons.katana.useCombo6sneak=1..10},type=!#exweapons:non_living,tag=ExWeapons.AllSelector,predicate=!exweapons:weapons/katana/use6sneak-mount_display] at @s run ride @s mount @e[type=block_display,limit=1,sort=nearest,tag=exweapons.katana.use6sneak,predicate=!exweapons:weapons/katana/use6sneak-display_mount]
 execute as @e[type=block_display,tag=exweapons.katana.use6sneak,predicate=!exweapons:weapons/katana/use6sneak-display_mount] at @s run kill @s
+
+execute as @e[scores={ExWeapons.katana.useChargeBreak1.tick=0..}] at @s run function exweapons:core/weapons/katana/use/chargebreak/4-1.tick
+execute as @e[scores={ExWeapons.katana.useChargeBreak2.tick=0..}] at @s run function exweapons:core/weapons/katana/use/chargebreak/8-1.tick
 ### return
 execute as @e[scores={ExWeapons.katana.useCombo6sneak=..0},type=!#exweapons:non_living,tag=ExWeapons.AllSelector] at @s run function exweapons:core/weapons/katana/use/mode1/2-6.damage-sneak
 execute as @e[scores={ExWeapons.katana.useReturn=..0},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{exweapons:{id:001d}}}},type=!#exweapons:non_living,tag=ExWeapons.AllSelector] at @s run function exweapons:core/weapons/katana/use/1.return

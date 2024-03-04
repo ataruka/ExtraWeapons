@@ -25,3 +25,7 @@ execute if entity @s[tag=ExWeapons.Abnormal.grassThunderLv2] run scoreboard play
 execute if entity @s[tag=ExWeapons.Abnormal.grassThunderLv2] run tag @s add status.update
 execute if entity @s[tag=ExWeapons.Abnormal.grassThunderLv1] run scoreboard players remove @s ExWeapons.DetailAbility.ExAttackProtectionMul_grassThunder 200
 execute if entity @s[tag=ExWeapons.Abnormal.grassThunderLv1] run tag @s add status.update
+execute if score @s ExWeapons.katana.useChargeBreak2.tick matches 0.. unless score @s ExWeapons.katana.useChargeBreak2 matches 0.. run scoreboard players remove @s ExWeapons.DetailAbility.ExAttackDamage 500
+execute if score @s ExWeapons.katana.useChargeBreak2.tick matches 0.. unless score @s ExWeapons.katana.useChargeBreak2 matches 0.. run scoreboard players remove @s ExWeapons.DetailAbility.AttackDamage 500
+execute if score @s ExWeapons.katana.useChargeBreak2.tick matches 0.. unless score @s ExWeapons.katana.useChargeBreak2 matches 0.. run scoreboard players remove @s ExWeapons.DetailAbility.MovementSpeed 150
+execute if score @s ExWeapons.katana.useChargeBreak2.tick matches 0.. unless score @s ExWeapons.katana.useChargeBreak2 matches 0.. run tag @s add status.update

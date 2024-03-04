@@ -23,5 +23,8 @@ execute as @a[scores={ExWeapons.attack=1..},nbt={SelectedItem:{id:"minecraft:sto
 ## 裂付与の剣-SplitAspect-Sword
 execute as @a[scores={ExWeapons.attack=1..},nbt={SelectedItem:{id:"minecraft:stone_sword",tag:{exweapons:{id:003.7}}}}] at @s run function exweapons:core/weapons/aspectsword/mu/attack/1.attack
 
+## 関係なしに発動
+execute as @a[scores={ExWeapons.attack=1..,ExWeapons.katana.useChargeBreak1.tick=0..}] at @s unless score @s ExWeapons.katana.useChargeBreak1 matches 0.. run function exweapons:core/weapons/katana/use/chargebreak/2-2.damage
+
 # リセット
 scoreboard players reset @a[scores={ExWeapons.attack=-2147483648..2147483647}] ExWeapons.attack

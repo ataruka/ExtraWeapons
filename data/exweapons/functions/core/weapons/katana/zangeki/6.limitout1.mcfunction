@@ -1,5 +1,5 @@
 # LimitOut処理
- summon area_effect_cloud ~ ~0.5 ~ {Tags:["ExWeapons.AEC"],Radius:0f,Duration:6,DurationOnUse:0f,Age:4,Effects:[{Id:2,Amplifier:5b,Duration:15,ShowParticles:0b}]}
+ summon area_effect_cloud ~ ~0.5 ~ {Tags:["ExWeapons.AEC"],Radius:0f,Duration:6,DurationOnUse:0f,Age:4,effects:[{id:"slowness",amplifier:5b,duration:15,show_particles:0b}]}
  effect give @s resistance 2 9 true
 
  execute rotated ~45 0 positioned ^ ^ ^6 run particle minecraft:dust 1 1 0 2 ~ ~1 ~ 1 1 1 1 500 force

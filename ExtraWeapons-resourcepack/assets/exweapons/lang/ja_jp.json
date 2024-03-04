@@ -83,6 +83,7 @@
     "actionbar.exweapons.weapon.katana.mode1_6sneak": "コンボスキル発動！",
 
     "chatlog.exweapons.cp_is_insufficient": "CPが不足しています。",
+    "chatlog.exweapons.charge_is_insufficient": "チャージが溜まっていません。",
     "chatlog.exweapons.login": "[☆]ようこそ！！",
     "chatlog.exweapons.login2": "[☆]",
     "chatlog.exweapons.login3": "ここ",
