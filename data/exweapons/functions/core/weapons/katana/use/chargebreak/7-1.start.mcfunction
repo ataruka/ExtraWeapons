@@ -1,7 +1,7 @@
 # 斬撃のダメージ処理
  tag @s add tmp.owner
 
- execute anchored eyes positioned ^ ^-0.5 ^ run function exweapons:core/particle/katana/chargebreak/0-damage
+ summon minecraft:item_display ~ ~ ~
 
 ## ダメージ適用
 ### Player 
